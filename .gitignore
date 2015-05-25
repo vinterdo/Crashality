@@ -41,3 +41,26 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# minecraft waste
+
+patches/
+instance.cfg
+minecraft/asm/
+minecraft/assets/
+minecraft/blueprints/
+minecraft/compendiumunlocks/
+minecraft/compendiumUpdates/
+minecraft/crash-reports/
+minecraft/CustomDISkins/
+minecraft/journeymap/
+minecraft/logs/
+minecraft/resourcepacks/
+minecraft/saves/
+minecraft/screenshots/
+minecraft/stats/
+minecraft/TCNodeTracker/
+minecraft/texturepacks/
+minecraft/icon.png
+minecraft/minetweaker.log
+minecraft/usernamecache.json
