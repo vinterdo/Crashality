@@ -4,8 +4,8 @@ ofFogStart:0.8
 ofMipmapType:0
 ofLoadFar:false
 ofPreloadedChunks:2
-ofOcclusionFancy:true
-ofSmoothFps:false
+ofOcclusionFancy:false
+ofSmoothFps:true
 ofSmoothWorld:false
 ofAoLevel:1.0
 ofClouds:3
