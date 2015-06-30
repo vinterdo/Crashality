@@ -1,0 +1,1389 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000000000000000, pid=6608, tid=140492968105728
+#
+# JRE version: OpenJDK Runtime Environment (7.0_79-b14) (build 1.7.0_79-b14)
+# Java VM: OpenJDK 64-Bit Server VM (24.79-b02 mixed mode linux-amd64 compressed oops)
+# Derivative: IcedTea 2.5.5
+# Distribution: Ubuntu Vivid Vervet (development branch), package 7u79-2.5.5-0ubuntu1
+# Problematic frame:
+# C  0x0000000000000000
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please include
+# instructions on how to reproduce the bug and visit:
+#   http://icedtea.classpath.org/bugzilla
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000000
+
+Registers:
+RAX=0x00007fc7111db7c0, RBX=0x0000000000000400, RCX=0x00007fc714128c80, RDX=0x00007fc714128c80
+RSP=0x00007fc711750d58, RBP=0x00007fc714113af0, RSI=0x0000000000000000, RDI=0x00007fc714113af0
+R8 =0x0000000003281000, R9 =0x0000000000000001, R10=0x00007fc714113b14, R11=0x0000000000000000
+R12=0x00007fc714117c80, R13=0x0000000000012000, R14=0x0000000000001000, R15=0x00007fc711750f08
+RIP=0x0000000000000000, EFLAGS=0x0000000000010246, CSGSFS=0x0000000000000033, ERR=0x0000000000000014
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fc711750d58)
+0x00007fc711750d58:   00007fc710fa44d1 00007fc6fc0089a0
+0x00007fc711750d68:   000000000000ffc0 00000000bb800000
+0x00007fc711750d78:   00007fc710b0ccd8 00007fc700000000
+0x00007fc711750d88:   00007fc7108bd4d2 00007fc704001080
+0x00007fc711750d98:   00007fc6fc001480 00007fc70400ba90
+0x00007fc711750da8:   00007fc77b90c509 0000000000000000
+0x00007fc711750db8:   00007fc7108b5bab 00007fc6fc006910
+0x00007fc711750dc8:   0000000000000000 0000000000002000
+0x00007fc711750dd8:   0000000000000000 00007fc7141129e0
+0x00007fc711750de8:   00007fc710d3ab0a 57007fc711750eb0
+0x00007fc711750df8:   2c3235f768401600 0000000000000000
+0x00007fc711750e08:   00007fc710d3ac24 0000000000000000
+0x00007fc711750e18:   00007fc7108bd4d2 0000000000002000
+0x00007fc711750e28:   00007fc71410f820 0000000000002000
+0x00007fc711750e38:   00007fc7108c5e22 0000000000002000
+0x00007fc711750e48:   00007fc714117c80 00007fc714117c80
+0x00007fc711750e58:   0000000000002000 00007fc71410f820
+0x00007fc711750e68:   00007fc6ee7b6040 0000040011750f00
+0x00007fc711750e78:   00007fc711750e90 00007fc704003ff0
+0x00007fc711750e88:   00007fc710d3ed39 00001fa10000037f
+0x00007fc711750e98:   00007fc7141129e0 0000000000000000
+0x00007fc711750ea8:   0000000000002000 00007fc71410e8a0
+0x00007fc711750eb8:   0000000000000000 00007fc714113af0
+0x00007fc711750ec8:   0000000000000008 00007fc711750f08
+0x00007fc711750ed8:   00007fc710fba544 00007fc711750f10
+0x00007fc711750ee8:   00007fc711750f00 0000000000002000
+0x00007fc711750ef8:   0000000000006000 00007fc6ee7b6040
+0x00007fc711750f08:   0000000000002000 00007fc711751a28
+0x00007fc711750f18:   00007fc71400aa50 0000000000000000
+0x00007fc711750f28:   0000000000000000 00007fc71164f3df
+0x00007fc711750f38:   0000000000100000 00007fc776c80d40
+0x00007fc711750f48:   00007fc710fad73a 0000000000000000 
+
+Instructions: (pc=0x0000000000000000)
+0xffffffffffffffe0:   
+
+Register to memory mapping:
+
+RAX=0x00007fc7111db7c0: <offset 0x2577c0> in /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/libopenal64.so at 0x00007fc710f84000
+RBX=0x0000000000000400 is an unknown value
+RCX=0x00007fc714128c80 is an unknown value
+RDX=0x00007fc714128c80 is an unknown value
+RSP=0x00007fc711750d58 is an unknown value
+RBP=0x00007fc714113af0 is an unknown value
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00007fc714113af0 is an unknown value
+R8 =0x0000000003281000 is an unknown value
+R9 =0x0000000000000001 is an unknown value
+R10=0x00007fc714113b14 is an unknown value
+R11=0x0000000000000000 is an unknown value
+R12=0x00007fc714117c80 is an unknown value
+R13=0x0000000000012000 is an unknown value
+R14=0x0000000000001000 is an unknown value
+R15=0x00007fc711750f08 is an unknown value
+
+
+Stack: [0x00007fc711651000,0x00007fc711752000],  sp=0x00007fc711750d58,  free space=1023k
+
+---------------  P R O C E S S  ---------------
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fc774006520] Threads_lock - owner thread: 0x00007fc77413c800
+
+Heap
+ PSYoungGen      total 572416K, used 25709K [0x00000007d5500000, 0x0000000800000000, 0x0000000800000000)
+  eden space 461312K, 3% used [0x00000007d5500000,0x00000007d6398e08,0x00000007f1780000)
+  from space 111104K, 9% used [0x00000007f1780000,0x00000007f2202608,0x00000007f8400000)
+  to   space 106496K, 0% used [0x00000007f9800000,0x00000007f9800000,0x0000000800000000)
+ ParOldGen       total 1016832K, used 938018K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 92% used [0x0000000780000000,0x00000007b94088d0,0x00000007be100000)
+ PSPermGen       total 262144K, used 180848K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 68% used [0x0000000770000000,0x000000077b09c308,0x0000000780000000)
+
+Card table byte_map: [0x00007fc77865a000,0x00007fc778adb000] byte_map_base: 0x00007fc774ada000
+
+Polling page: 0x00007fc77c00d000
+
+Code Cache  [0x00007fc771000000, 0x00007fc771ba0000, 0x00007fc774000000)
+ total_blobs=4770 nmethods=3248 adapters=1474 free_code_cache=37435Kb largest_free_block=38190784
+
+Compilation events (10 events):
+Event: 945,123 Thread 0x00007fc774171800 nmethod 3847% 0x00007fc771b8b390 code [0x00007fc771b8b580, 0x00007fc771b8bb58]
+Event: 945,150 Thread 0x00007fc774174800 nmethod 3846% 0x00007fc771b91790 code [0x00007fc771b91aa0, 0x00007fc771b92d20]
+Event: 945,374 Thread 0x00007fc774171800 3848             java.util.LinkedHashMap::transfer (88 bytes)
+Event: 945,384 Thread 0x00007fc774171800 nmethod 3848 0x00007fc771b88ad0 code [0x00007fc771b88c40, 0x00007fc771b88ea8]
+Event: 997,381 Thread 0x00007fc774174800 3849             java.lang.ThreadLocal$ThreadLocalMap::cleanSomeSlots (60 bytes)
+Event: 997,454 Thread 0x00007fc774174800 nmethod 3849 0x00007fc771b873d0 code [0x00007fc771b87520, 0x00007fc771b87648]
+Event: 1000,216 Thread 0x00007fc774171800 3850             net.minecraft.util.RegistryNamespaced::func_82594_a (9 bytes)
+Event: 1000,223 Thread 0x00007fc774171800 nmethod 3850 0x00007fc771b87050 code [0x00007fc771b871a0, 0x00007fc771b872a8]
+Event: 1004,968 Thread 0x00007fc774174800 3851             java.util.zip.InflaterInputStream::fill (60 bytes)
+Event: 1005,396 Thread 0x00007fc774174800 nmethod 3851 0x00007fc771739cd0 code [0x00007fc771739e60, 0x00007fc77173a3e8]
+
+GC Heap History (10 events):
+Event: 799,764 GC heap before
+{Heap before GC invocations=76 (full 3):
+ PSYoungGen      total 591872K, used 489920K [0x00000007d5500000, 0x00000007ffd00000, 0x0000000800000000)
+  eden space 489472K, 100% used [0x00000007d5500000,0x00000007f3300000,0x00000007f3300000)
+  from space 102400K, 0% used [0x00000007f9900000,0x00000007f9970000,0x00000007ffd00000)
+  to   space 103424K, 0% used [0x00000007f3300000,0x00000007f3300000,0x00000007f9800000)
+ ParOldGen       total 1016832K, used 819883K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 80% used [0x0000000780000000,0x00000007b20aad50,0x00000007be100000)
+ PSPermGen       total 262144K, used 176188K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 67% used [0x0000000770000000,0x000000077ac0f208,0x0000000780000000)
+Event: 799,798 GC heap after
+Heap after GC invocations=76 (full 3):
+ PSYoungGen      total 592896K, used 512K [0x00000007d5500000, 0x00000007ffd00000, 0x0000000800000000)
+  eden space 489472K, 0% used [0x00000007d5500000,0x00000007d5500000,0x00000007f3300000)
+  from space 103424K, 0% used [0x00000007f3300000,0x00000007f3380010,0x00000007f9800000)
+  to   space 101376K, 0% used [0x00000007f9a00000,0x00000007f9a00000,0x00000007ffd00000)
+ ParOldGen       total 1016832K, used 820075K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 80% used [0x0000000780000000,0x00000007b20dad50,0x00000007be100000)
+ PSPermGen       total 262144K, used 176188K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 67% used [0x0000000770000000,0x000000077ac0f208,0x0000000780000000)
+}
+Event: 811,993 GC heap before
+{Heap before GC invocations=77 (full 3):
+ PSYoungGen      total 592896K, used 489984K [0x00000007d5500000, 0x00000007ffd00000, 0x0000000800000000)
+  eden space 489472K, 100% used [0x00000007d5500000,0x00000007f3300000,0x00000007f3300000)
+  from space 103424K, 0% used [0x00000007f3300000,0x00000007f3380010,0x00000007f9800000)
+  to   space 101376K, 0% used [0x00000007f9a00000,0x00000007f9a00000,0x00000007ffd00000)
+ ParOldGen       total 1016832K, used 820075K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 80% used [0x0000000780000000,0x00000007b20dad50,0x00000007be100000)
+ PSPermGen       total 262144K, used 176425K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 67% used [0x0000000770000000,0x000000077ac4a4c0,0x0000000780000000)
+Event: 813,377 GC heap after
+Heap after GC invocations=77 (full 3):
+ PSYoungGen      total 559104K, used 99898K [0x00000007d5500000, 0x0000000800000000, 0x0000000800000000)
+  eden space 457728K, 0% used [0x00000007d5500000,0x00000007d5500000,0x00000007f1400000)
+  from space 101376K, 98% used [0x00000007f9a00000,0x00000007ffb8e9d8,0x00000007ffd00000)
+  to   space 120832K, 0% used [0x00000007f1400000,0x00000007f1400000,0x00000007f8a00000)
+ ParOldGen       total 1016832K, used 820347K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 80% used [0x0000000780000000,0x00000007b211ed60,0x00000007be100000)
+ PSPermGen       total 262144K, used 176425K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 67% used [0x0000000770000000,0x000000077ac4a4c0,0x0000000780000000)
+}
+Event: 827,756 GC heap before
+{Heap before GC invocations=78 (full 3):
+ PSYoungGen      total 559104K, used 557626K [0x00000007d5500000, 0x0000000800000000, 0x0000000800000000)
+  eden space 457728K, 100% used [0x00000007d5500000,0x00000007f1400000,0x00000007f1400000)
+  from space 101376K, 98% used [0x00000007f9a00000,0x00000007ffb8e9d8,0x00000007ffd00000)
+  to   space 120832K, 0% used [0x00000007f1400000,0x00000007f1400000,0x00000007f8a00000)
+ ParOldGen       total 1016832K, used 820347K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 80% used [0x0000000780000000,0x00000007b211ed60,0x00000007be100000)
+ PSPermGen       total 262144K, used 176822K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 67% used [0x0000000770000000,0x000000077acadb58,0x0000000780000000)
+Event: 827,884 GC heap after
+Heap after GC invocations=78 (full 3):
+ PSYoungGen      total 578560K, used 4998K [0x00000007d5500000, 0x0000000800000000, 0x0000000800000000)
+  eden space 457728K, 0% used [0x00000007d5500000,0x00000007d5500000,0x00000007f1400000)
+  from space 120832K, 4% used [0x00000007f1400000,0x00000007f18e1998,0x00000007f8a00000)
+  to   space 117248K, 0% used [0x00000007f8d80000,0x00000007f8d80000,0x0000000800000000)
+ ParOldGen       total 1016832K, used 919640K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 90% used [0x0000000780000000,0x00000007b82161b0,0x00000007be100000)
+ PSPermGen       total 262144K, used 176822K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 67% used [0x0000000770000000,0x000000077acadb58,0x0000000780000000)
+}
+Event: 940,858 GC heap before
+{Heap before GC invocations=79 (full 3):
+ PSYoungGen      total 578560K, used 462726K [0x00000007d5500000, 0x0000000800000000, 0x0000000800000000)
+  eden space 457728K, 100% used [0x00000007d5500000,0x00000007f1400000,0x00000007f1400000)
+  from space 120832K, 4% used [0x00000007f1400000,0x00000007f18e1998,0x00000007f8a00000)
+  to   space 117248K, 0% used [0x00000007f8d80000,0x00000007f8d80000,0x0000000800000000)
+ ParOldGen       total 1016832K, used 919640K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 90% used [0x0000000780000000,0x00000007b82161b0,0x00000007be100000)
+ PSPermGen       total 262144K, used 178593K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 68% used [0x0000000770000000,0x000000077ae68510,0x0000000780000000)
+Event: 942,611 GC heap after
+Heap after GC invocations=79 (full 3):
+ PSYoungGen      total 562688K, used 17051K [0x00000007d5500000, 0x00000007ff080000, 0x0000000800000000)
+  eden space 461312K, 0% used [0x00000007d5500000,0x00000007d5500000,0x00000007f1780000)
+  from space 101376K, 16% used [0x00000007f8d80000,0x00000007f9e26cc0,0x00000007ff080000)
+  to   space 111104K, 0% used [0x00000007f1780000,0x00000007f1780000,0x00000007f8400000)
+ ParOldGen       total 1016832K, used 923511K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 90% used [0x0000000780000000,0x00000007b85dde00,0x00000007be100000)
+ PSPermGen       total 262144K, used 178593K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 68% used [0x0000000770000000,0x000000077ae68510,0x0000000780000000)
+}
+Event: 1004,435 GC heap before
+{Heap before GC invocations=80 (full 3):
+ PSYoungGen      total 562688K, used 478363K [0x00000007d5500000, 0x00000007ff080000, 0x0000000800000000)
+  eden space 461312K, 100% used [0x00000007d5500000,0x00000007f1780000,0x00000007f1780000)
+  from space 101376K, 16% used [0x00000007f8d80000,0x00000007f9e26cc0,0x00000007ff080000)
+  to   space 111104K, 0% used [0x00000007f1780000,0x00000007f1780000,0x00000007f8400000)
+ ParOldGen       total 1016832K, used 923511K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 90% used [0x0000000780000000,0x00000007b85dde00,0x00000007be100000)
+ PSPermGen       total 262144K, used 180801K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 68% used [0x0000000770000000,0x000000077b090558,0x0000000780000000)
+Event: 1004,791 GC heap after
+Heap after GC invocations=80 (full 3):
+ PSYoungGen      total 572416K, used 10761K [0x00000007d5500000, 0x0000000800000000, 0x0000000800000000)
+  eden space 461312K, 0% used [0x00000007d5500000,0x00000007d5500000,0x00000007f1780000)
+  from space 111104K, 9% used [0x00000007f1780000,0x00000007f2202608,0x00000007f8400000)
+  to   space 106496K, 0% used [0x00000007f9800000,0x00000007f9800000,0x0000000800000000)
+ ParOldGen       total 1016832K, used 938018K [0x0000000780000000, 0x00000007be100000, 0x00000007d5500000)
+  object space 1016832K, 92% used [0x0000000780000000,0x00000007b94088d0,0x00000007be100000)
+ PSPermGen       total 262144K, used 180801K [0x0000000770000000, 0x0000000780000000, 0x0000000780000000)
+  object space 262144K, 68% used [0x0000000770000000,0x000000077b090558,0x0000000780000000)
+}
+
+Deoptimization events (10 events):
+Event: 996,465 Thread 0x00007fc77400a000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fc7718a5f00 method=java.util.AbstractCollection.containsAll(Ljava/util/Collection;)Z @ 1
+Event: 997,740 Thread 0x00007fc77400a000 Uncommon trap: reason=unreached action=reinterpret pc=0x00007fc771aaff80 method=com.pahimar.ee3.exchange.WrappedStack.canBeWrapped(Ljava/lang/Object;)Z @ 39
+Event: 1002,833 Thread 0x00007fc77400a000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00007fc7719529c4 method=org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(Ljava/lang/ClassLoader;Ljava/net/URI;)Lorg/apache/logging/log4j/core/LoggerContext; @ 14
+Event: 1003,287 Thread 0x00007fc77400a000 Uncommon trap: reason=unreached action=reinterpret pc=0x00007fc7719fba38 method=org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Ljava/lang/String;Ljava/lang/ClassLoader;Z)Lorg/apache/logging/log4j/core/LoggerContext; @ 22
+Event: 1003,287 Thread 0x00007fc77400a000 Uncommon trap: reason=unreached action=reinterpret pc=0x00007fc77176b9e8 method=org.apache.logging.log4j.core.lookup.StrSubstitutor.replace(Lorg/apache/logging/log4j/core/LogEvent;Ljava/lang/String;)Ljava/lang/String; @ 1
+Event: 1003,340 Thread 0x00007fc6b4021800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc77193d0dc method=java.util.ArrayList.<init>(Ljava/util/Collection;)V @ 6
+Event: 1003,479 Thread 0x00007fc77400a000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc771a412a0 method=com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Z)Z @ 103
+Event: 1003,751 Thread 0x00007fc77400a000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00007fc77176c500 method=org.apache.logging.log4j.core.appender.routing.RoutingAppender.getControl(Ljava/lang/String;Lorg/apache/logging/log4j/core/LogEvent;)Lorg/apache/logging/log4j/core/confi
+Event: 1004,945 Thread 0x00007fc77400a000 Uncommon trap: reason=unreached action=reinterpret pc=0x00007fc77147450c method=org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Ljava/lang/String;Ljava/lang/ClassLoader;Z)Lorg/apache/logging/log4j/core/LoggerContext; @ 22
+Event: 1004,955 Thread 0x00007fc77400a000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc771a412a0 method=com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Z)Z @ 103
+
+Internal exceptions (10 events):
+Event: 1003,256 Thread 0x00007fc77400a000 Threw 0x00000007f05f1900 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+Event: 1003,256 Thread 0x00007fc77400a000 Threw 0x00000007f05f50b0 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+Event: 1003,287 Thread 0x00007fc77400a000 Implicit null exception at 0x00007fc77176b4da to 0x00007fc77176b9d1
+Event: 1003,316 Thread 0x00007fc77400a000 Threw 0x00000007f071df80 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+Event: 1003,316 Thread 0x00007fc77400a000 Threw 0x00000007f0721730 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+Event: 1003,751 Thread 0x00007fc77400a000 Implicit null exception at 0x00007fc77176c34f to 0x00007fc77176c4ef
+Event: 1004,926 Thread 0x00007fc77400a000 Threw 0x00000007d5d68f80 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+Event: 1004,926 Thread 0x00007fc77400a000 Threw 0x00000007d5d6c730 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+Event: 1004,951 Thread 0x00007fc77400a000 Threw 0x00000007d5e91c98 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+Event: 1004,951 Thread 0x00007fc77400a000 Threw 0x00000007d5e95448 at /build/buildd/openjdk-7-7u79-2.5.5/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1284
+
+Events (10 events):
+Event: 1004,950 loading class 0x00007fc7745593f0
+Event: 1004,951 loading class 0x00007fc7745593f0 done
+Event: 1004,954 Thread 0x00007fc77400a000 Uncommon trap: trap_request=0xffffffc6 fr.pc=0x00007fc771a412a0
+Event: 1004,955 Thread 0x00007fc77400a000 DEOPT PACKING pc=0x00007fc771a412a0 sp=0x00007fc77bfe7a30
+Event: 1004,955 Thread 0x00007fc77400a000 DEOPT UNPACKING pc=0x00007fc771039445 sp=0x00007fc77bfe7a00 mode 2
+Event: 1004,991 loading class 0x00007fc6e3537b60
+Event: 1004,991 loading class 0x00007fc6e3537b60 done
+Event: 1005,427 loading class 0x00007fc6fb8a7d70
+Event: 1005,427 loading class 0x00007fc6fb8a7d70 done
+Event: 1005,606 Executing VM operation: Exit
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:01 1050909                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00600000-00601000 r--p 00000000 08:01 1050909                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+00601000-00602000 rw-p 00001000 08:01 1050909                            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+010d5000-010f6000 rw-p 00000000 00:00 0                                  [heap]
+770000000-7be100000 rw-p 00000000 00:00 0 
+7be100000-7d5500000 rw-p 00000000 00:00 0 
+7d5500000-800000000 rw-p 00000000 00:00 0 
+7fc6a0000000-7fc6a0021000 rw-p 00000000 00:00 0 
+7fc6a0021000-7fc6a4000000 ---p 00000000 00:00 0 
+7fc6a4000000-7fc6a4021000 rw-p 00000000 00:00 0 
+7fc6a4021000-7fc6a8000000 ---p 00000000 00:00 0 
+7fc6a8000000-7fc6a8021000 rw-p 00000000 00:00 0 
+7fc6a8021000-7fc6ac000000 ---p 00000000 00:00 0 
+7fc6ac000000-7fc6ac021000 rw-p 00000000 00:00 0 
+7fc6ac021000-7fc6b0000000 ---p 00000000 00:00 0 
+7fc6b0000000-7fc6b0021000 rw-p 00000000 00:00 0 
+7fc6b0021000-7fc6b4000000 ---p 00000000 00:00 0 
+7fc6b4000000-7fc6b402c000 rw-p 00000000 00:00 0 
+7fc6b402c000-7fc6b8000000 ---p 00000000 00:00 0 
+7fc6b8000000-7fc6be000000 rw-s 00000000 00:05 155557                     /drm mm object (deleted)
+7fc6be000000-7fc6c4000000 rw-s 00000000 00:05 155559                     /drm mm object (deleted)
+7fc6c4000000-7fc6c7ffc000 rw-p 00000000 00:00 0 
+7fc6c7ffc000-7fc6c8000000 ---p 00000000 00:00 0 
+7fc6c8000000-7fc6c9a8e000 rw-p 00000000 00:00 0 
+7fc6c9a8e000-7fc6cc000000 ---p 00000000 00:00 0 
+7fc6cc000000-7fc6cfffc000 rw-p 00000000 00:00 0 
+7fc6cfffc000-7fc6d0000000 ---p 00000000 00:00 0 
+7fc6d1000000-7fc6d4800000 rw-s 00000000 00:05 151526                     /drm mm object (deleted)
+7fc6d4800000-7fc6d8000000 rw-s 00000000 00:05 151527                     /drm mm object (deleted)
+7fc6d8000000-7fc6dbff8000 rw-p 00000000 00:00 0 
+7fc6dbff8000-7fc6dc000000 ---p 00000000 00:00 0 
+7fc6dc000000-7fc6dfff9000 rw-p 00000000 00:00 0 
+7fc6dfff9000-7fc6e0000000 ---p 00000000 00:00 0 
+7fc6e0000000-7fc6e8000000 rw-p 00000000 00:00 0 
+7fc6e8000000-7fc6ebfff000 rw-p 00000000 00:00 0 
+7fc6ebfff000-7fc6ec000000 ---p 00000000 00:00 0 
+7fc6ec0c1000-7fc6ec0c4000 ---p 00000000 00:00 0 
+7fc6ec0c4000-7fc6ec1c2000 rw-p 00000000 00:00 0 
+7fc6ec1c2000-7fc6ec1c5000 ---p 00000000 00:00 0 
+7fc6ec1c5000-7fc6ec2c3000 rw-p 00000000 00:00 0 
+7fc6ec2c3000-7fc6ec2c6000 ---p 00000000 00:00 0 
+7fc6ec2c6000-7fc6ec3c4000 rw-p 00000000 00:00 0 
+7fc6ec3c4000-7fc6ec3c7000 ---p 00000000 00:00 0 
+7fc6ec3c7000-7fc6ec4c5000 rw-p 00000000 00:00 0 
+7fc6ec4c5000-7fc6ec4c8000 ---p 00000000 00:00 0 
+7fc6ec4c8000-7fc6ec5c6000 rw-p 00000000 00:00 0 
+7fc6ec5c6000-7fc6ec5c9000 ---p 00000000 00:00 0 
+7fc6ec5c9000-7fc6ec6c7000 rw-p 00000000 00:00 0 
+7fc6ec6c7000-7fc6ec6ca000 ---p 00000000 00:00 0 
+7fc6ec6ca000-7fc6ec7c8000 rw-p 00000000 00:00 0 
+7fc6ec7c8000-7fc6ec7cb000 ---p 00000000 00:00 0 
+7fc6ec7cb000-7fc6ec8c9000 rw-p 00000000 00:00 0                          [stack:7048]
+7fc6ec8c9000-7fc6ec8cc000 ---p 00000000 00:00 0 
+7fc6ec8cc000-7fc6ec9ca000 rw-p 00000000 00:00 0                          [stack:7047]
+7fc6ec9ca000-7fc6ec9cd000 ---p 00000000 00:00 0 
+7fc6ec9cd000-7fc6ecacb000 rw-p 00000000 00:00 0                          [stack:7045]
+7fc6ecacb000-7fc6ed0cb000 rw-s 00000000 00:05 157231                     /drm mm object (deleted)
+7fc6ed0cb000-7fc6ed4cb000 rw-s 00000000 00:05 157921                     /drm mm object (deleted)
+7fc6ed4cb000-7fc6ed4cc000 rw-s 00000000 00:05 156179                     /drm mm object (deleted)
+7fc6ed4cc000-7fc6ed4cd000 rw-s 00000000 00:05 157074                     /drm mm object (deleted)
+7fc6ed4cd000-7fc6ed4d0000 ---p 00000000 00:00 0 
+7fc6ed4d0000-7fc6ed5ce000 rw-p 00000000 00:00 0                          [stack:6909]
+7fc6ed5ce000-7fc6ed5d1000 ---p 00000000 00:00 0 
+7fc6ed5d1000-7fc6ed6cf000 rw-p 00000000 00:00 0                          [stack:6908]
+7fc6ed6cf000-7fc6ed6d2000 ---p 00000000 00:00 0 
+7fc6ed6d2000-7fc6ed7d0000 rw-p 00000000 00:00 0                          [stack:6907]
+7fc6ed7d0000-7fc6ed7d3000 ---p 00000000 00:00 0 
+7fc6ed7d3000-7fc6ed8d1000 rw-p 00000000 00:00 0                          [stack:6921]
+7fc6ed8d1000-7fc6ed8d4000 ---p 00000000 00:00 0 
+7fc6ed8d4000-7fc6ed9d2000 rw-p 00000000 00:00 0                          [stack:6906]
+7fc6ed9d2000-7fc6ed9d5000 ---p 00000000 00:00 0 
+7fc6ed9d5000-7fc6edad3000 rw-p 00000000 00:00 0                          [stack:6876]
+7fc6edad3000-7fc6edad6000 ---p 00000000 00:00 0 
+7fc6edad6000-7fc6edbd4000 rw-p 00000000 00:00 0                          [stack:6875]
+7fc6edbd4000-7fc6edbd7000 ---p 00000000 00:00 0 
+7fc6edbd7000-7fc6edcd5000 rw-p 00000000 00:00 0                          [stack:6874]
+7fc6edcd5000-7fc6edcd8000 ---p 00000000 00:00 0 
+7fc6edcd8000-7fc6eddd6000 rw-p 00000000 00:00 0                          [stack:6873]
+7fc6eddd6000-7fc6eddd9000 ---p 00000000 00:00 0 
+7fc6eddd9000-7fc6eded7000 rw-p 00000000 00:00 0                          [stack:6872]
+7fc6eded7000-7fc6ededa000 r--s 00005000 08:01 4588535                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/carpentersblocks/CarpentersBlocksCachedResources.zip
+7fc6ededa000-7fc6edee2000 rw-s 1053cc000 00:06 10050                     /dev/dri/card0
+7fc6edee2000-7fc6edee5000 r--s 00005000 08:01 4588535                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/carpentersblocks/CarpentersBlocksCachedResources.zip
+7fc6edee5000-7fc6edee9000 rw-s 1053b4000 00:06 10050                     /dev/dri/card0
+7fc6edee9000-7fc6edeeb000 rw-s 1053b2000 00:06 10050                     /dev/dri/card0
+7fc6edeeb000-7fc6edeec000 rw-s 00000000 00:05 156764                     /drm mm object (deleted)
+7fc6edeec000-7fc6ee586000 rw-p 00000000 00:00 0 
+7fc6ee586000-7fc6f2587000 rw-s 00000000 00:12 155705                     /dev/shm/pulse-shm-1627127592
+7fc6f2587000-7fc6f2588000 ---p 00000000 00:00 0 
+7fc6f2588000-7fc6f2d88000 rw-p 00000000 00:00 0                          [stack:6775]
+7fc6f2d88000-7fc6f2db3000 r-xp 00000000 08:01 41689947                   /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.7
+7fc6f2db3000-7fc6f2fb2000 ---p 0002b000 08:01 41689947                   /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.7
+7fc6f2fb2000-7fc6f2fb3000 r--p 0002a000 08:01 41689947                   /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.7
+7fc6f2fb3000-7fc6f2fb4000 rw-p 0002b000 08:01 41689947                   /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.7
+7fc6f2fb4000-7fc6f2fbb000 r-xp 00000000 08:01 41689669                   /usr/lib/x86_64-linux-gnu/libogg.so.0.8.2
+7fc6f2fbb000-7fc6f31bb000 ---p 00007000 08:01 41689669                   /usr/lib/x86_64-linux-gnu/libogg.so.0.8.2
+7fc6f31bb000-7fc6f31bc000 r--p 00007000 08:01 41689669                   /usr/lib/x86_64-linux-gnu/libogg.so.0.8.2
+7fc6f31bc000-7fc6f31bd000 rw-p 00008000 08:01 41689669                   /usr/lib/x86_64-linux-gnu/libogg.so.0.8.2
+7fc6f31bd000-7fc6f31ce000 r-xp 00000000 08:01 1446050                    /lib/x86_64-linux-gnu/libgpg-error.so.0.13.0
+7fc6f31ce000-7fc6f33cd000 ---p 00011000 08:01 1446050                    /lib/x86_64-linux-gnu/libgpg-error.so.0.13.0
+7fc6f33cd000-7fc6f33ce000 r--p 00010000 08:01 1446050                    /lib/x86_64-linux-gnu/libgpg-error.so.0.13.0
+7fc6f33ce000-7fc6f33cf000 rw-p 00011000 08:01 1446050                    /lib/x86_64-linux-gnu/libgpg-error.so.0.13.0
+7fc6f33cf000-7fc6f3460000 r-xp 00000000 08:01 41689949                   /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.10
+7fc6f3460000-7fc6f365f000 ---p 00091000 08:01 41689949                   /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.10
+7fc6f365f000-7fc6f3681000 r--p 00090000 08:01 41689949                   /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.10
+7fc6f3681000-7fc6f3682000 rw-p 000b2000 08:01 41689949                   /usr/lib/x86_64-linux-gnu/libvorbisenc.so.2.0.10
+7fc6f3682000-7fc6f36f3000 r-xp 00000000 08:01 41688880                   /usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0
+7fc6f36f3000-7fc6f38f3000 ---p 00071000 08:01 41688880                   /usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0
+7fc6f38f3000-7fc6f38f5000 r--p 00071000 08:01 41688880                   /usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0
+7fc6f38f5000-7fc6f38f6000 rw-p 00073000 08:01 41688880                   /usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0
+7fc6f38f6000-7fc6f39ce000 r-xp 00000000 08:01 1446046                    /lib/x86_64-linux-gnu/libgcrypt.so.20.0.2
+7fc6f39ce000-7fc6f3bce000 ---p 000d8000 08:01 1446046                    /lib/x86_64-linux-gnu/libgcrypt.so.20.0.2
+7fc6f3bce000-7fc6f3bcf000 r--p 000d8000 08:01 1446046                    /lib/x86_64-linux-gnu/libgcrypt.so.20.0.2
+7fc6f3bcf000-7fc6f3bd8000 rw-p 000d9000 08:01 1446046                    /lib/x86_64-linux-gnu/libgcrypt.so.20.0.2
+7fc6f3bd8000-7fc6f3bf9000 r-xp 00000000 08:01 1446070                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7fc6f3bf9000-7fc6f3df8000 ---p 00021000 08:01 1446070                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7fc6f3df8000-7fc6f3df9000 r--p 00020000 08:01 1446070                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7fc6f3df9000-7fc6f3dfa000 rw-p 00021000 08:01 1446070                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7fc6f3dfa000-7fc6f3dff000 r-xp 00000000 08:01 41689016                   /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7fc6f3dff000-7fc6f3ffe000 ---p 00005000 08:01 41689016                   /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7fc6f3ffe000-7fc6f3fff000 r--p 00004000 08:01 41689016                   /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7fc6f3fff000-7fc6f4000000 rw-p 00005000 08:01 41689016                   /usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1
+7fc6f4000000-7fc6f4021000 rw-p 00000000 00:00 0 
+7fc6f4021000-7fc6f8000000 ---p 00000000 00:00 0 
+7fc6f8000000-7fc6fc000000 rw-p 00000000 00:00 0 
+7fc6fc000000-7fc6fc021000 rw-p 00000000 00:00 0 
+7fc6fc021000-7fc700000000 ---p 00000000 00:00 0 
+7fc700000000-7fc700021000 rw-p 00000000 00:00 0 
+7fc700021000-7fc704000000 ---p 00000000 00:00 0 
+7fc704000000-7fc704023000 rw-p 00000000 00:00 0 
+7fc704023000-7fc708000000 ---p 00000000 00:00 0 
+7fc708000000-7fc708021000 rw-p 00000000 00:00 0 
+7fc708021000-7fc70c000000 ---p 00000000 00:00 0 
+7fc70c000000-7fc70c046000 rw-p 00000000 00:00 0 
+7fc70c046000-7fc710000000 ---p 00000000 00:00 0 
+7fc710000000-7fc710002000 rw-s 00000000 00:05 156762                     /drm mm object (deleted)
+7fc710002000-7fc710004000 rw-s 00000000 00:05 156760                     /drm mm object (deleted)
+7fc710004000-7fc71000c000 rw-s 00000000 00:05 156758                     /drm mm object (deleted)
+7fc71000c000-7fc710012000 rw-s 00000000 00:05 156756                     /drm mm object (deleted)
+7fc710012000-7fc710016000 rw-s 00000000 00:05 156754                     /drm mm object (deleted)
+7fc710016000-7fc71001a000 rw-s 00000000 00:05 156752                     /drm mm object (deleted)
+7fc71001a000-7fc71003a000 rw-s 00000000 00:05 156750                     /drm mm object (deleted)
+7fc71003a000-7fc7100aa000 rw-s 00000000 00:05 156748                     /drm mm object (deleted)
+7fc7100aa000-7fc7100ab000 rw-s 00000000 00:05 156746                     /drm mm object (deleted)
+7fc7100ab000-7fc7100ac000 rw-s 00000000 00:05 156744                     /drm mm object (deleted)
+7fc7100ac000-7fc7100ad000 rw-s 00000000 00:05 156742                     /drm mm object (deleted)
+7fc7100ad000-7fc7100ae000 rw-s 00000000 00:05 156740                     /drm mm object (deleted)
+7fc7100ae000-7fc7100af000 rw-s 00000000 00:05 156738                     /drm mm object (deleted)
+7fc7100af000-7fc7100b3000 rw-s 00000000 00:05 156736                     /drm mm object (deleted)
+7fc7100b3000-7fc7100d3000 rw-s 00000000 00:05 156732                     /drm mm object (deleted)
+7fc7100d3000-7fc710143000 rw-s 00000000 00:05 156730                     /drm mm object (deleted)
+7fc710143000-7fc710149000 rw-s 00000000 00:05 156720                     /drm mm object (deleted)
+7fc710149000-7fc710169000 rw-s 00000000 00:05 156714                     /drm mm object (deleted)
+7fc710169000-7fc7101d9000 rw-s 00000000 00:05 156712                     /drm mm object (deleted)
+7fc7101d9000-7fc7101e1000 rw-s 1053aa000 00:06 10050                     /dev/dri/card0
+7fc7101e1000-7fc7101f9000 rw-s 00000000 00:05 155716                     /drm mm object (deleted)
+7fc7101f9000-7fc71025b000 r-xp 00000000 08:01 41689838                   /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7fc71025b000-7fc71045b000 ---p 00062000 08:01 41689838                   /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7fc71045b000-7fc71045e000 r--p 00062000 08:01 41689838                   /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7fc71045e000-7fc71045f000 rw-p 00065000 08:01 41689838                   /usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.25
+7fc71045f000-7fc710463000 rw-p 00000000 00:00 0 
+7fc710463000-7fc71046b000 r-xp 00000000 08:01 1446186                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7fc71046b000-7fc71066a000 ---p 00008000 08:01 1446186                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7fc71066a000-7fc71066b000 r--p 00007000 08:01 1446186                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7fc71066b000-7fc71066c000 rw-p 00008000 08:01 1446186                    /lib/x86_64-linux-gnu/libwrap.so.0.7.6
+7fc71066c000-7fc71066d000 rw-p 00000000 00:00 0 
+7fc71066d000-7fc710692000 r-xp 00000000 08:01 1445949                    /lib/x86_64-linux-gnu/libsystemd.so.0.6.0
+7fc710692000-7fc710892000 ---p 00025000 08:01 1445949                    /lib/x86_64-linux-gnu/libsystemd.so.0.6.0
+7fc710892000-7fc710893000 r--p 00025000 08:01 1445949                    /lib/x86_64-linux-gnu/libsystemd.so.0.6.0
+7fc710893000-7fc710894000 rw-p 00026000 08:01 1445949                    /lib/x86_64-linux-gnu/libsystemd.so.0.6.0
+7fc710894000-7fc71090b000 r-xp 00000000 08:01 41946264                   /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-6.0.so
+7fc71090b000-7fc710b0b000 ---p 00077000 08:01 41946264                   /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-6.0.so
+7fc710b0b000-7fc710b0c000 r--p 00077000 08:01 41946264                   /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-6.0.so
+7fc710b0c000-7fc710b0d000 rw-p 00078000 08:01 41946264                   /usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-6.0.so
+7fc710b0d000-7fc710b17000 r-xp 00000000 08:01 1446063                    /lib/x86_64-linux-gnu/libjson-c.so.2.0.0
+7fc710b17000-7fc710d16000 ---p 0000a000 08:01 1446063                    /lib/x86_64-linux-gnu/libjson-c.so.2.0.0
+7fc710d16000-7fc710d17000 r--p 00009000 08:01 1446063                    /lib/x86_64-linux-gnu/libjson-c.so.2.0.0
+7fc710d17000-7fc710d18000 rw-p 0000a000 08:01 1446063                    /lib/x86_64-linux-gnu/libjson-c.so.2.0.0
+7fc710d18000-7fc710d66000 r-xp 00000000 08:01 41689746                   /usr/lib/x86_64-linux-gnu/libpulse.so.0.18.0
+7fc710d66000-7fc710f65000 ---p 0004e000 08:01 41689746                   /usr/lib/x86_64-linux-gnu/libpulse.so.0.18.0
+7fc710f65000-7fc710f66000 r--p 0004d000 08:01 41689746                   /usr/lib/x86_64-linux-gnu/libpulse.so.0.18.0
+7fc710f66000-7fc710f67000 rw-p 0004e000 08:01 41689746                   /usr/lib/x86_64-linux-gnu/libpulse.so.0.18.0
+7fc710f67000-7fc710f68000 rw-s 00000000 00:05 156734                     /drm mm object (deleted)
+7fc710f68000-7fc710f6a000 rw-s 00000000 00:05 156728                     /drm mm object (deleted)
+7fc710f6a000-7fc710f6b000 rw-s 00000000 00:05 156726                     /drm mm object (deleted)
+7fc710f6b000-7fc710f6c000 rw-s 00000000 00:05 156724                     /drm mm object (deleted)
+7fc710f6c000-7fc710f84000 rw-s 00000000 00:05 155272                     /drm mm object (deleted)
+7fc710f84000-7fc710fd9000 r-xp 00000000 08:01 4588628                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/libopenal64.so
+7fc710fd9000-7fc7111d8000 ---p 00055000 08:01 4588628                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/libopenal64.so
+7fc7111d8000-7fc7111db000 r--p 00054000 08:01 4588628                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/libopenal64.so
+7fc7111db000-7fc7111dc000 rw-p 00057000 08:01 4588628                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/libopenal64.so
+7fc7111dc000-7fc7111dd000 rw-p 00000000 00:00 0 
+7fc7111dd000-7fc7111ed000 rw-s 105392000 00:06 10050                     /dev/dri/card0
+7fc7111ed000-7fc71124d000 rw-s 00000000 00:05 153919                     /drm mm object (deleted)
+7fc71124d000-7fc711250000 ---p 00000000 00:00 0 
+7fc711250000-7fc71134e000 rw-p 00000000 00:00 0                          [stack:6870]
+7fc71134e000-7fc711351000 ---p 00000000 00:00 0 
+7fc711351000-7fc71144f000 rw-p 00000000 00:00 0                          [stack:6871]
+7fc71144f000-7fc711452000 ---p 00000000 00:00 0 
+7fc711452000-7fc711550000 rw-p 00000000 00:00 0                          [stack:6773]
+7fc711550000-7fc711553000 ---p 00000000 00:00 0 
+7fc711553000-7fc711651000 rw-p 00000000 00:00 0                          [stack:6772]
+7fc711651000-7fc711654000 ---p 00000000 00:00 0 
+7fc711654000-7fc711752000 rw-p 00000000 00:00 0                          [stack:6776]
+7fc711752000-7fc711755000 ---p 00000000 00:00 0 
+7fc711755000-7fc711853000 rw-p 00000000 00:00 0                          [stack:6735]
+7fc711853000-7fc7118ce000 r-xp 00000000 08:01 41946220                   /usr/lib/x86_64-linux-gnu/nss/libfreebl3.so
+7fc7118ce000-7fc711ace000 ---p 0007b000 08:01 41946220                   /usr/lib/x86_64-linux-gnu/nss/libfreebl3.so
+7fc711ace000-7fc711ad0000 r--p 0007b000 08:01 41946220                   /usr/lib/x86_64-linux-gnu/nss/libfreebl3.so
+7fc711ad0000-7fc711ad1000 rw-p 0007d000 08:01 41946220                   /usr/lib/x86_64-linux-gnu/nss/libfreebl3.so
+7fc711ad1000-7fc711ad5000 rw-p 00000000 00:00 0 
+7fc711ad5000-7fc711b97000 r-xp 00000000 08:01 41689858                   /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fc711b97000-7fc711d96000 ---p 000c2000 08:01 41689858                   /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fc711d96000-7fc711d99000 r--p 000c1000 08:01 41689858                   /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fc711d99000-7fc711d9b000 rw-p 000c4000 08:01 41689858                   /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fc711d9b000-7fc711d9c000 rw-p 00000000 00:00 0 
+7fc711d9c000-7fc711dde000 r-xp 00000000 08:01 41946226                   /usr/lib/x86_64-linux-gnu/nss/libsoftokn3.so
+7fc711dde000-7fc711fdd000 ---p 00042000 08:01 41946226                   /usr/lib/x86_64-linux-gnu/nss/libsoftokn3.so
+7fc711fdd000-7fc711fdf000 r--p 00041000 08:01 41946226                   /usr/lib/x86_64-linux-gnu/nss/libsoftokn3.so
+7fc711fdf000-7fc711fe0000 rw-p 00043000 08:01 41946226                   /usr/lib/x86_64-linux-gnu/nss/libsoftokn3.so
+7fc711fe0000-7fc712019000 r-xp 00000000 08:01 41689651                   /usr/lib/x86_64-linux-gnu/libnspr4.so
+7fc712019000-7fc712219000 ---p 00039000 08:01 41689651                   /usr/lib/x86_64-linux-gnu/libnspr4.so
+7fc712219000-7fc71221a000 r--p 00039000 08:01 41689651                   /usr/lib/x86_64-linux-gnu/libnspr4.so
+7fc71221a000-7fc71221c000 rw-p 0003a000 08:01 41689651                   /usr/lib/x86_64-linux-gnu/libnspr4.so
+7fc71221c000-7fc71221e000 rw-p 00000000 00:00 0 
+7fc71221e000-7fc712221000 r-xp 00000000 08:01 41689714                   /usr/lib/x86_64-linux-gnu/libplds4.so
+7fc712221000-7fc712420000 ---p 00003000 08:01 41689714                   /usr/lib/x86_64-linux-gnu/libplds4.so
+7fc712420000-7fc712421000 r--p 00002000 08:01 41689714                   /usr/lib/x86_64-linux-gnu/libplds4.so
+7fc712421000-7fc712422000 rw-p 00003000 08:01 41689714                   /usr/lib/x86_64-linux-gnu/libplds4.so
+7fc712422000-7fc712426000 r-xp 00000000 08:01 41689713                   /usr/lib/x86_64-linux-gnu/libplc4.so
+7fc712426000-7fc712625000 ---p 00004000 08:01 41689713                   /usr/lib/x86_64-linux-gnu/libplc4.so
+7fc712625000-7fc712626000 r--p 00003000 08:01 41689713                   /usr/lib/x86_64-linux-gnu/libplc4.so
+7fc712626000-7fc712627000 rw-p 00004000 08:01 41689713                   /usr/lib/x86_64-linux-gnu/libplc4.so
+7fc712627000-7fc71264c000 r-xp 00000000 08:01 41689660                   /usr/lib/x86_64-linux-gnu/libnssutil3.so
+7fc71264c000-7fc71284c000 ---p 00025000 08:01 41689660                   /usr/lib/x86_64-linux-gnu/libnssutil3.so
+7fc71284c000-7fc712852000 r--p 00025000 08:01 41689660                   /usr/lib/x86_64-linux-gnu/libnssutil3.so
+7fc712852000-7fc712853000 rw-p 0002b000 08:01 41689660                   /usr/lib/x86_64-linux-gnu/libnssutil3.so
+7fc712853000-7fc71298f000 r-xp 00000000 08:01 41689652                   /usr/lib/x86_64-linux-gnu/libnss3.so
+7fc71298f000-7fc712b8f000 ---p 0013c000 08:01 41689652                   /usr/lib/x86_64-linux-gnu/libnss3.so
+7fc712b8f000-7fc712b95000 r--p 0013c000 08:01 41689652                   /usr/lib/x86_64-linux-gnu/libnss3.so
+7fc712b95000-7fc712b97000 rw-p 00142000 08:01 41689652                   /usr/lib/x86_64-linux-gnu/libnss3.so
+7fc712b97000-7fc712b98000 rw-p 00000000 00:00 0 
+7fc712b98000-7fc712b99000 rw-s 00000000 00:05 156722                     /drm mm object (deleted)
+7fc712b99000-7fc712b9d000 rw-s 00000000 00:05 156718                     /drm mm object (deleted)
+7fc712b9d000-7fc712ba5000 rw-s 1053a2000 00:06 10050                     /dev/dri/card0
+7fc712ba5000-7fc712bb5000 rw-s 00000000 00:05 153920                     /drm mm object (deleted)
+7fc712bb5000-7fc712bc5000 r-xp 00000000 08:01 1050885                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+7fc712bc5000-7fc712dc5000 ---p 00010000 08:01 1050885                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+7fc712dc5000-7fc712dc6000 r--p 00010000 08:01 1050885                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+7fc712dc6000-7fc712dc7000 rw-p 00011000 08:01 1050885                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libj2pkcs11.so
+7fc712dc7000-7fc712dce000 r--s 00060000 08:01 4588468                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/IguanaTinkerTweaks-1.7.10-2.1.5.jar
+7fc712dce000-7fc712dcf000 r--s 00002000 08:01 4588539                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/fmpintegration-1.2.2-1.7.10.jar
+7fc712dcf000-7fc712e04000 r--s 0067b000 08:01 4588562                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/witchery-1.7.10-0.24.1.jar
+7fc712e04000-7fc712e06000 r--s 00005000 08:01 4588528                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/WailaHarvestability-mc1.7.x-1.1.2.jar
+7fc712e06000-7fc712e0a000 r--s 00046000 08:01 4588525                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/TravellersGear-1.7.10-1.16.3.jar
+7fc712e0a000-7fc712e0d000 r--s 00025000 08:01 4588524                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Translocator-1.7.10-1.1.1.14-universal.jar
+7fc712e0d000-7fc712e0f000 r--s 0001a000 08:01 4588523                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Torched-4.0.0.jar
+7fc712e0f000-7fc712e14000 r--s 00031000 08:01 4588514                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/TMechworks-1.7.10-0.2.14.100.jar
+7fc712e14000-7fc712e1c000 r--s 0005d000 08:01 4588520                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ThermalDynamics-[1.7.10]1.0.0-122.jar
+7fc712e1c000-7fc712e26000 r--s 001d3000 08:01 4588518                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ThaumicExploration-1.7.10-1.1-37.jar
+7fc712e26000-7fc712e31000 r--s 00102000 08:01 4588561                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/thaumicenergistics-0.8.10.0.jar
+7fc712e31000-7fc712e34000 r--s 0000e000 08:01 4588560                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/thaumcraftneiplugin-1.7.10-1.7.jar
+7fc712e34000-7fc712e36000 r--s 00006000 08:01 4588517                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ThaumcraftGates-1.4.0.jar
+7fc712e36000-7fc712e3a000 r--s 007d3000 08:01 4588515                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Talismans2-1.7.10-1.1.6.jar
+7fc712e3a000-7fc712e43000 r--s 0004c000 08:01 4588512                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/StorageDrawers-1.7.10-1.4.6.jar
+7fc712e43000-7fc712e47000 r--s 00034000 08:01 4588511                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/StevesWorkshop-0.5.1.jar
+7fc712e47000-7fc712e62000 r--s 00250000 08:01 4588509                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/StevesCarts2.0.0.b18.jar
+7fc712e62000-7fc712e6c000 r--s 000a0000 08:01 4588510                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/StevesFactoryManagerA93.jar
+7fc712e6c000-7fc712e6f000 r--s 0000c000 08:01 4588506                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/SolarFlux-1.7.10-0.5b.jar
+7fc712e6f000-7fc712e78000 r--s 00070000 08:01 4588559                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/roguelike-1.7.10-1.3.6.3.jar
+7fc712e78000-7fc712e9a000 r--s 0028b000 08:01 4588558                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/rftools-3.10.jar
+7fc712e9a000-7fc712e9e000 r--s 0004a000 08:01 4588505                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/RedstoneArsenal-[1.7.10]1.1.0-80.jar
+7fc712e9e000-7fc712ea3000 r--s 0009f000 08:01 4588501                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ProjectRed-1.7.10-4.6.0.79-Lighting.jar
+7fc712ea3000-7fc712ea5000 r--s 00011000 08:01 4588499                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ProjectRed-1.7.10-4.6.0.79-Compat.jar
+7fc712ea5000-7fc712eb5000 r--s 00123000 08:01 4588502                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ProjectRed-1.7.10-4.6.0.79-Mechanical_beta.jar
+7fc712eb5000-7fc712ec9000 r--s 00349000 08:01 4588500                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ProjectRed-1.7.10-4.6.0.79-Integration.jar
+7fc712ec9000-7fc712efd000 r--s 00dbf000 08:01 4588496                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/PneumaticCraft-1.7.10-1.9.0-85-universal.jar
+7fc712efd000-7fc712f22000 r--s 001d3000 08:01 4588495                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Pam's HarvestCraft 1.7.10h.jar
+7fc712f22000-7fc712f29000 r--s 00035000 08:01 4588493                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/OpenPeripheralIntegration-1.7.10-0.2.2.jar
+7fc712f29000-7fc712f2f000 r--s 0004d000 08:01 4588491                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/OpenPeripheralAddons-1.7.10-0.3.1.jar
+7fc712f2f000-7fc712f37000 r--s 0003b000 08:01 4588492                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/OpenPeripheralCore-1.7.10-1.1.1.jar
+7fc712f37000-7fc712f38000 r--s 00006000 08:01 4588488                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ObsidiPlates-1.7.10-universal-3.0.0.18.jar
+7fc712f38000-7fc712f3b000 r--s 00011000 08:01 4588485                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/NetherOres-[1.7.10]2.3.0-12.jar
+7fc712f3b000-7fc712f3e000 r--s 00015000 08:01 4588557                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/neiaddons-1.12.8.29-mc1.7.10.jar
+7fc712f3e000-7fc712f4a000 r--s 0019b000 08:01 4588484                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/MrCrayfishFurnitureModv3.4.7(1.7.10).jar
+7fc712f4a000-7fc712f4c000 r--s 00003000 08:01 4588483                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Morpheus-1.7.10-1.6.4.jar
+7fc712f4c000-7fc712f4f000 r--s 000fb000 08:01 4588482                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Morph-Beta-0.9.1.jar
+7fc712f4f000-7fc712f60000 r--s 00183000 08:01 4588481                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ModularPowersuits-0.11.0.178.jar
+7fc712f60000-7fc712f65000 r--s 0002b000 08:01 4588487                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Numina-0.4.0.100.jar
+7fc712f65000-7fc712f70000 r--s 00058000 08:01 4588480                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ModTweaker 2-0.8.1.jar
+7fc712f70000-7fc712f85000 r--s 000d7000 08:01 4588478                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/MineTweaker3-1.7.10-3.0.9C.jar
+7fc712f85000-7fc712f89000 r--s 00030000 08:01 4588503                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ProjectRed-1.7.10-4.6.0.79-World.jar
+7fc712f89000-7fc712f97000 r--s 000fd000 08:01 4588479                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Minechem-1.7.10-5.0.5.396.jar
+7fc712f97000-7fc712f9f000 r--s 00136000 08:01 4588555                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/malisisdoors-1.7.10-1.7.1.jar
+7fc712f9f000-7fc712fba000 r--s 002d3000 08:01 4588552                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/magicalcrops-4.0.0_PUBLIC_BETA_3.jar
+7fc712fba000-7fc712fcd000 r--s 00140000 08:01 4588474                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/JourneyMap5.0.1_Unlimited_MC1.7.10.jar
+7fc712fcd000-7fc712fd3000 r--s 00066000 08:01 4588473                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Jabba-1.2.1a_1.7.10.jar
+7fc712fd3000-7fc712fd6000 r--s 00024000 08:01 4588550                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ironchest-1.7.10-6.0.60.741-universal.jar
+7fc712fd6000-7fc712fe8000 r--s 00192000 08:01 4588469                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ImmersiveEngineering-0.3.2.jar
+7fc712fe8000-7fc712fff000 r--s 00360000 08:01 4588548                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ihl-tools_n_machines-0.554-1.7.10.jar
+7fc712fff000-7fc714000000 rw-p 00000000 00:00 0 
+7fc714000000-7fc7141d9000 rw-p 00000000 00:00 0 
+7fc7141d9000-7fc718000000 ---p 00000000 00:00 0 
+7fc718000000-7fc718002000 r--s 00001000 08:01 4588475                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/MFR Compat - Magical Crops v1-2-1.jar
+7fc718002000-7fc718006000 r--s 00041000 08:01 4588467                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/IGW-Mod.jar
+7fc718006000-7fc71800f000 r--s 0012a000 08:01 4588464                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/HQM-The Journey (4.2.3).jar
+7fc71800f000-7fc718013000 r--s 0002a000 08:01 4588463                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Guide-API-1.7.10-1.0.1-20.jar
+7fc718013000-7fc718015000 r--s 0003f000 08:01 4588462                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/GravityGun-4.0.0-beta.jar
+7fc718015000-7fc718019000 r--s 00032000 08:01 4588545                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/iChunUtil-4.2.2.jar
+7fc718019000-7fc71801d000 r--s 00062000 08:01 4588461                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/GraviSuite-1.7.10-2.0.3.jar
+7fc71801d000-7fc718038000 r--s 00131000 08:01 4588543                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/generators-0.9.14.89-mc1.7.10.jar
+7fc718038000-7fc718051000 r--s 0015a000 08:01 4588542                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/gendustry-1.5.0.104-mc1.7.10.jar
+7fc718051000-7fc71805b000 r--s 000df000 08:01 4588553                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/magicbees-1.7.10-2.3.0.jar
+7fc71805b000-7fc71805f000 r--s 00020000 08:01 4588541                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/funky-locomotion-1.7.10-beta-5c.jar
+7fc71805f000-7fc718095000 r--s 002cf000 08:01 4588540                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/forestry_1.7.10-3.6.0.17.jar
+7fc718095000-7fc7180a7000 r--s 000c8000 08:01 4588556                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/natura-1.7.10-2.2.0.1.jar
+7fc7180a7000-7fc7180c9000 r--s 00c69000 08:01 4588465                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/HardcoreEnderExpansion  MC-1.7.10  v1.8.jar
+7fc7180c9000-7fc7180d1000 r--s 00089000 08:01 4588460                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Forbidden Magic-1.7.10-0.562.jar
+7fc7180d1000-7fc7180ec000 r--s 001b5000 08:01 4588537                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/extrautilities-1.2.6.jar
+7fc7180ec000-7fc71816c000 r--s 004bd000 08:01 4588513                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/TConstruct-1.7.10-1.8.5.jar
+7fc71816c000-7fc718170000 r--s 0002d000 08:01 4588476                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Mantle-1.7.10-0.3.2.jar
+7fc718170000-7fc71817d000 r--s 0012a000 08:01 4588459                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ExtraCells-1.7.10-2.2.73b129.jar
+7fc71817d000-7fc718185000 r--s 0007e000 08:01 4588527                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Waila-1.5.10_1.7.10.jar
+7fc718185000-7fc718196000 r--s 000c7000 08:01 4588536                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/extrabiomesxl_1.7.10-3.16.2.jar
+7fc718196000-7fc7181a3000 r--s 0009b000 08:01 4588456                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/EnderTech-1.7.10-0.3.2.388.jar
+7fc7181a3000-7fc7181a6000 r--s 00021000 08:01 4588455                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/EnderStorage-1.7.10-1.4.7.36-universal.jar
+7fc7181a6000-7fc7181d6000 r--s 003b1000 08:01 4588454                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/EnderIO-1.7.10-2.2.8.381.jar
+7fc7181d6000-7fc7181f8000 r--s 00182000 08:01 4588477                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/MineFactoryReloaded-[1.7.10]2.8.0-104.jar
+7fc7181f8000-7fc718209000 r--s 00295000 08:01 4588453                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Draconic-Evolution-1.7.10-1.0.1c.jar
+7fc718209000-7fc718226000 r--s 00130000 08:01 4588451                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ComputerCraft1.73.jar
+7fc718226000-7fc71826c000 r--s 00564000 08:01 4588448                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Chisel2-2.4.0.38.jar
+7fc71826c000-7fc7182a1000 r--s 00349000 08:01 4588504                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Railcraft_1.7.10-9.6.1.0.jar
+7fc7182a1000-7fc7182b2000 r--s 00234000 08:01 4588457                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/EquivalentExchange3-1.7.10-0.3.507.jar
+7fc7182b2000-7fc7182bb000 r--s 00070000 08:01 4588446                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Carpenter's Blocks v3.3.6 - MC 1.7.10.jar
+7fc7182bb000-7fc7192bc000 rw-p 00000000 00:00 0 
+7fc7192bc000-7fc7192c1000 r-xp 00000000 08:01 1446098                    /lib/x86_64-linux-gnu/libnss_dns-2.21.so
+7fc7192c1000-7fc7194c0000 ---p 00005000 08:01 1446098                    /lib/x86_64-linux-gnu/libnss_dns-2.21.so
+7fc7194c0000-7fc7194c1000 r--p 00004000 08:01 1446098                    /lib/x86_64-linux-gnu/libnss_dns-2.21.so
+7fc7194c1000-7fc7194c2000 rw-p 00005000 08:01 1446098                    /lib/x86_64-linux-gnu/libnss_dns-2.21.so
+7fc7194c2000-7fc7194c4000 r-xp 00000000 08:01 1446106                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc7194c4000-7fc7196c3000 ---p 00002000 08:01 1446106                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc7196c3000-7fc7196c4000 r--p 00001000 08:01 1446106                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc7196c4000-7fc7196c5000 rw-p 00002000 08:01 1446106                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc7196c5000-7fc7196c8000 r-xp 00000000 08:01 1446110                    /lib/x86_64-linux-gnu/libnss_myhostname.so.2
+7fc7196c8000-7fc7198c7000 ---p 00003000 08:01 1446110                    /lib/x86_64-linux-gnu/libnss_myhostname.so.2
+7fc7198c7000-7fc7198c8000 r--p 00002000 08:01 1446110                    /lib/x86_64-linux-gnu/libnss_myhostname.so.2
+7fc7198c8000-7fc7198c9000 rw-p 00003000 08:01 1446110                    /lib/x86_64-linux-gnu/libnss_myhostname.so.2
+7fc7198c9000-7fc71a7ce000 rw-p 00000000 00:00 0 
+7fc71a7ce000-7fc71a805000 r-xp 00000000 08:01 41689912                   /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0.0.0
+7fc71a805000-7fc71aa04000 ---p 00037000 08:01 41689912                   /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0.0.0
+7fc71aa04000-7fc71aa05000 r--p 00036000 08:01 41689912                   /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0.0.0
+7fc71aa05000-7fc71aa06000 rw-p 00037000 08:01 41689912                   /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0.0.0
+7fc71aa06000-7fc71aa0e000 r-xp 00000000 08:01 41689703                   /usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1
+7fc71aa0e000-7fc71ac0d000 ---p 00008000 08:01 41689703                   /usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1
+7fc71ac0d000-7fc71ac0e000 r--p 00007000 08:01 41689703                   /usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1
+7fc71ac0e000-7fc71ac0f000 rw-p 00008000 08:01 41689703                   /usr/lib/x86_64-linux-gnu/libpciaccess.so.0.11.1
+7fc71ac0f000-7fc71ac1b000 r-xp 00000000 08:01 41689192                   /usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1.0.1
+7fc71ac1b000-7fc71ae1a000 ---p 0000c000 08:01 41689192                   /usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1.0.1
+7fc71ae1a000-7fc71ae1b000 r--p 0000b000 08:01 41689192                   /usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1.0.1
+7fc71ae1b000-7fc71ae1c000 rw-p 0000c000 08:01 41689192                   /usr/lib/x86_64-linux-gnu/libdrm_radeon.so.1.0.1
+7fc71ae1c000-7fc71ae22000 r-xp 00000000 08:01 41689190                   /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2.0.0
+7fc71ae22000-7fc71b021000 ---p 00006000 08:01 41689190                   /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2.0.0
+7fc71b021000-7fc71b022000 r--p 00005000 08:01 41689190                   /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2.0.0
+7fc71b022000-7fc71b023000 rw-p 00006000 08:01 41689190                   /usr/lib/x86_64-linux-gnu/libdrm_nouveau.so.2.0.0
+7fc71b023000-7fc71b044000 r-xp 00000000 08:01 41689188                   /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+7fc71b044000-7fc71b243000 ---p 00021000 08:01 41689188                   /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+7fc71b243000-7fc71b244000 r--p 00020000 08:01 41689188                   /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+7fc71b244000-7fc71b245000 rw-p 00021000 08:01 41689188                   /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0
+7fc71b245000-7fc71b7ae000 r-xp 00000000 08:01 41945328                   /usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+7fc71b7ae000-7fc71b9ad000 ---p 00569000 08:01 41945328                   /usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+7fc71b9ad000-7fc71b9d0000 r--p 00568000 08:01 41945328                   /usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+7fc71b9d0000-7fc71b9d6000 rw-p 0058b000 08:01 41945328                   /usr/lib/x86_64-linux-gnu/dri/i965_dri.so
+7fc71b9d6000-7fc71b9de000 rw-p 00000000 00:00 0 
+7fc71b9de000-7fc71b9f0000 r-xp 00000000 08:01 1445937                    /lib/x86_64-linux-gnu/libudev.so.1.6.2
+7fc71b9f0000-7fc71bbef000 ---p 00012000 08:01 1445937                    /lib/x86_64-linux-gnu/libudev.so.1.6.2
+7fc71bbef000-7fc71bbf0000 r--p 00011000 08:01 1445937                    /lib/x86_64-linux-gnu/libudev.so.1.6.2
+7fc71bbf0000-7fc71bbf1000 rw-p 00012000 08:01 1445937                    /lib/x86_64-linux-gnu/libudev.so.1.6.2
+7fc71bbf1000-7fc71bbfd000 r-xp 00000000 08:01 41689186                   /usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0
+7fc71bbfd000-7fc71bdfc000 ---p 0000c000 08:01 41689186                   /usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0
+7fc71bdfc000-7fc71bdfd000 r--p 0000b000 08:01 41689186                   /usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0
+7fc71bdfd000-7fc71bdfe000 rw-p 0000c000 08:01 41689186                   /usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0
+7fc71bdfe000-7fc71bdff000 r-xp 00000000 08:01 41690034                   /usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0
+7fc71bdff000-7fc71bffe000 ---p 00001000 08:01 41690034                   /usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0
+7fc71bffe000-7fc71bfff000 r--p 00000000 08:01 41690034                   /usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0
+7fc71bfff000-7fc71c000000 rw-p 00001000 08:01 41690034                   /usr/lib/x86_64-linux-gnu/libxshmfence.so.1.0.0
+7fc71c000000-7fc71c021000 rw-p 00000000 00:00 0 
+7fc71c021000-7fc720000000 ---p 00000000 00:00 0 
+7fc720000000-7fc720045000 rw-p 00000000 00:00 0 
+7fc720045000-7fc724000000 ---p 00000000 00:00 0 
+7fc724000000-7fc724021000 rw-p 00000000 00:00 0 
+7fc724021000-7fc728000000 ---p 00000000 00:00 0 
+7fc728000000-7fc728021000 rw-p 00000000 00:00 0 
+7fc728021000-7fc72c000000 ---p 00000000 00:00 0 
+7fc72c000000-7fc72c021000 rw-p 00000000 00:00 0 
+7fc72c021000-7fc730000000 ---p 00000000 00:00 0 
+7fc730000000-7fc730021000 rw-p 00000000 00:00 0 
+7fc730021000-7fc734000000 ---p 00000000 00:00 0 
+7fc734000000-7fc734004000 r--s 00095000 08:01 4588452                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/DoomlikeDungeons-1.7.6-MC1.7.10.jar
+7fc734004000-7fc734007000 r--s 00018000 08:01 4588447                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ChickenChunks-1.7.10-1.3.4.19-universal.jar
+7fc734007000-7fc734019000 r--s 000da000 08:01 4588445                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/BuildcraftAdditions-1.7.10-2.1.2.jar
+7fc734019000-7fc73401c000 r--s 00011000 08:01 4588458                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Eureka-1.7.10-3.0.2.jar
+7fc73401c000-7fc734048000 r--s 00218000 08:01 4588533                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/buildcraft-6.4.15.jar
+7fc734048000-7fc734079000 r--s 00de4000 08:01 4588444                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Botania r1.6-193.jar
+7fc734079000-7fc73407b000 r--s 00016000 08:01 4588433                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/1.7.10/Baubles-1.7.10-1.0.1.10.jar
+7fc73407b000-7fc7340a6000 r--s 011d6000 08:01 4588443                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/BloodMagic-1.7.10-1.3.3-4.jar
+7fc7340a6000-7fc7340b5000 r--s 000ae000 08:01 4588442                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/BigReactors-0.4.3A.jar
+7fc7340b5000-7fc7340c8000 r--s 0021c000 08:01 4588521                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ThermalExpansion-[1.7.10]4.0.1-182.jar
+7fc7340c8000-7fc7340d5000 r--s 00191000 08:01 4588522                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ThermalFoundation-[1.7.10]1.0.0-81.jar
+7fc7340d5000-7fc7340ea000 r--s 004ee000 08:01 4588441                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/BiblioCraft[v1.10.4][MC1.7.10].jar
+7fc7340ea000-7fc734106000 r--s 00140000 08:01 4588532                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/bdlib-1.9.0.94-mc1.7.10.jar
+7fc734106000-7fc734109000 r--s 0001e000 08:01 4588437                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ATG-1.7.10-0.12.0.jar
+7fc734109000-7fc734117000 r--s 00080000 08:01 4588438                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/AgriCraft-1.7.10-1.3.1.jar
+7fc734117000-7fc73411b000 r--s 0009a000 08:01 4588530                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/[1.7.10]DamageIndicatorsMod-3.2.3.jar
+7fc73411b000-7fc73411d000 r--s 00010000 08:01 4588497                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/PortalGun.jar
+7fc73411d000-7fc73411e000 r--s 00014000 08:01 4588470                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Infernal_Mobs_v4.0.zip
+7fc73411e000-7fc73413e000 r--s 000b8000 08:01 4588466                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/IC2NuclearControl-2.2.1a-Yolo-src.zip
+7fc73413e000-7fc734143000 r-xp 00000000 08:01 41690012                   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+7fc734143000-7fc734342000 ---p 00005000 08:01 41690012                   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+7fc734342000-7fc734343000 r--p 00004000 08:01 41690012                   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+7fc734343000-7fc734344000 rw-p 00005000 08:01 41690012                   /usr/lib/x86_64-linux-gnu/libxcb-sync.so.1.0.0
+7fc734344000-7fc734346000 r-xp 00000000 08:01 41690000                   /usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0
+7fc734346000-7fc734545000 ---p 00002000 08:01 41690000                   /usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0
+7fc734545000-7fc734546000 r--p 00001000 08:01 41690000                   /usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0
+7fc734546000-7fc734547000 rw-p 00002000 08:01 41690000                   /usr/lib/x86_64-linux-gnu/libxcb-present.so.0.0.0
+7fc734547000-7fc734549000 r-xp 00000000 08:01 41689990                   /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.0.0
+7fc734549000-7fc734748000 ---p 00002000 08:01 41689990                   /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.0.0
+7fc734748000-7fc734749000 r--p 00001000 08:01 41689990                   /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.0.0
+7fc734749000-7fc73474a000 rw-p 00002000 08:01 41689990                   /usr/lib/x86_64-linux-gnu/libxcb-dri3.so.0.0.0
+7fc73474a000-7fc73474d000 r-xp 00000000 08:01 41689988                   /usr/lib/x86_64-linux-gnu/libxcb-dri2.so.0.0.0
+7fc73474d000-7fc73494d000 ---p 00003000 08:01 41689988                   /usr/lib/x86_64-linux-gnu/libxcb-dri2.so.0.0.0
+7fc73494d000-7fc73494e000 r--p 00003000 08:01 41689988                   /usr/lib/x86_64-linux-gnu/libxcb-dri2.so.0.0.0
+7fc73494e000-7fc73494f000 rw-p 00004000 08:01 41689988                   /usr/lib/x86_64-linux-gnu/libxcb-dri2.so.0.0.0
+7fc73494f000-7fc734964000 r-xp 00000000 08:01 42076302                   /home/vinterdo/Downloads/MultiMC/bin/libxcb-glx.so.0
+7fc734964000-7fc734b63000 ---p 00015000 08:01 42076302                   /home/vinterdo/Downloads/MultiMC/bin/libxcb-glx.so.0
+7fc734b63000-7fc734b65000 r--p 00014000 08:01 42076302                   /home/vinterdo/Downloads/MultiMC/bin/libxcb-glx.so.0
+7fc734b65000-7fc734b66000 rw-p 00016000 08:01 42076302                   /home/vinterdo/Downloads/MultiMC/bin/libxcb-glx.so.0
+7fc734b66000-7fc734b67000 r-xp 00000000 08:01 41688923                   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+7fc734b67000-7fc734d66000 ---p 00001000 08:01 41688923                   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+7fc734d66000-7fc734d67000 r--p 00000000 08:01 41688923                   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+7fc734d67000-7fc734d68000 rw-p 00001000 08:01 41688923                   /usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0
+7fc734d68000-7fc734d6a000 r-xp 00000000 08:01 41688938                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fc734d6a000-7fc734f69000 ---p 00002000 08:01 41688938                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fc734f69000-7fc734f6a000 r--p 00001000 08:01 41688938                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fc734f6a000-7fc734f6b000 rw-p 00002000 08:01 41688938                   /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7fc734f6b000-7fc734f90000 r-xp 00000000 08:01 41689315                   /usr/lib/x86_64-linux-gnu/libglapi.so.0.0.0
+7fc734f90000-7fc735190000 ---p 00025000 08:01 41689315                   /usr/lib/x86_64-linux-gnu/libglapi.so.0.0.0
+7fc735190000-7fc735193000 r--p 00025000 08:01 41689315                   /usr/lib/x86_64-linux-gnu/libglapi.so.0.0.0
+7fc735193000-7fc735194000 rw-p 00028000 08:01 41689315                   /usr/lib/x86_64-linux-gnu/libglapi.so.0.0.0
+7fc735194000-7fc735195000 rw-p 00000000 00:00 0 
+7fc735195000-7fc73522d000 r-xp 00000000 08:01 41946215                   /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+7fc73522d000-7fc73542c000 ---p 00098000 08:01 41946215                   /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+7fc73542c000-7fc73542f000 r--p 00097000 08:01 41946215                   /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+7fc73542f000-7fc735430000 rw-p 0009a000 08:01 41946215                   /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1.2.0
+7fc735430000-7fc735431000 rw-p 00000000 00:00 0 
+7fc735431000-7fc735434000 ---p 00000000 00:00 0 
+7fc735434000-7fc73546a000 rw-p 00000000 00:00 0                          [stack:7057]
+7fc73546a000-7fc73546d000 ---p 00000000 00:00 0 
+7fc73546d000-7fc73556b000 rw-p 00000000 00:00 0                          [stack:6869]
+7fc73556b000-7fc73556f000 r-xp 00000000 08:01 41688980                   /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0
+7fc73556f000-7fc73576f000 ---p 00004000 08:01 41688980                   /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0
+7fc73576f000-7fc735770000 r--p 00004000 08:01 41688980                   /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0
+7fc735770000-7fc735771000 rw-p 00005000 08:01 41688980                   /usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0
+7fc735771000-7fc73577a000 r-xp 00000000 08:01 41688962                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fc73577a000-7fc735979000 ---p 00009000 08:01 41688962                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fc735979000-7fc73597a000 r--p 00008000 08:01 41688962                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fc73597a000-7fc73597b000 rw-p 00009000 08:01 41688962                   /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7fc73597b000-7fc73597c000 r--s 000d1000 08:01 4588439                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/BattleTowers-1.7.10.zip
+7fc73597c000-7fc73597d000 rw-s 00000000 00:05 152530                     /drm mm object (deleted)
+7fc73597d000-7fc735985000 rw-s 00000000 00:05 150862                     /drm mm object (deleted)
+7fc735985000-7fc735986000 rwxp 00000000 00:00 0 
+7fc735986000-7fc735987000 rw-s 00000000 00:05 156716                     /drm mm object (deleted)
+7fc735987000-7fc73598e000 r--s 00000000 08:01 41945877                   /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7fc73598e000-7fc73598f000 rw-s 00000000 00:05 152525                     /drm mm object (deleted)
+7fc73598f000-7fc735990000 rw-s 105866000 00:06 10050                     /dev/dri/card0
+7fc735990000-7fc735998000 rw-s 00000000 00:05 153921                     /drm mm object (deleted)
+7fc735998000-7fc735a04000 r-xp 00000000 08:01 4588626                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/liblwjgl64.so
+7fc735a04000-7fc735c03000 ---p 0006c000 08:01 4588626                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/liblwjgl64.so
+7fc735c03000-7fc735c05000 r--p 0006b000 08:01 4588626                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/liblwjgl64.so
+7fc735c05000-7fc735c06000 rw-p 0006d000 08:01 4588626                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/natives/liblwjgl64.so
+7fc735c06000-7fc735c07000 r-xp 00000000 08:01 1050858                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjawt.so
+7fc735c07000-7fc735e06000 ---p 00001000 08:01 1050858                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjawt.so
+7fc735e06000-7fc735e07000 r--p 00000000 08:01 1050858                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjawt.so
+7fc735e07000-7fc735e08000 rw-p 00001000 08:01 1050858                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjawt.so
+7fc735e08000-7fc735e0e000 r--s 0004e000 08:01 4588547                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ic2/EJML-core-0.26.jar
+7fc735e0e000-7fc735e13000 r--s 00052000 08:01 4588526                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/WR-CBE-1.7.10-1.4.1.9-universal.jar
+7fc735e13000-7fc735e26000 r-xp 00000000 08:01 1050860                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libunpack.so
+7fc735e26000-7fc736026000 ---p 00013000 08:01 1050860                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libunpack.so
+7fc736026000-7fc736027000 r--p 00013000 08:01 1050860                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libunpack.so
+7fc736027000-7fc736028000 rw-p 00014000 08:01 1050860                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libunpack.so
+7fc736028000-7fc736029000 rw-p 00000000 00:00 0 
+7fc736029000-7fc736037000 r--s 003f3000 08:01 4588529                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/WitchingGadgets-1.7.10-1.1.6.jar
+7fc736037000-7fc73604f000 r--s 001f3000 08:01 4588519                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ThaumicTinkerer-2.5-1.7.10-164.jar
+7fc73604f000-7fc736850000 rw-p 00000000 00:00 0 
+7fc736850000-7fc736882000 r--s 00bca000 08:01 4588516                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/Thaumcraft-1.7.10-4.2.3.5.jar
+7fc736882000-7fc736887000 r--s 0003d000 08:01 4588508                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/StevesAddons-1.7.10-0.10.8.jar
+7fc736887000-7fc73688c000 r--s 00027000 08:01 4588507                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/SpACore-1.7.10-01.05.05.00.jar
+7fc73688c000-7fc736895000 r--s 000da000 08:01 4588498                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/ProjectRed-1.7.10-4.6.0.79-Base.jar
+7fc736895000-7fc7368b6000 r--s 000b3000 08:01 4588494                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/OptiFine_1.7.10_HD_B7.jar
+7fc7368b6000-7fc7368c8000 r--s 000b5000 08:01 4588490                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/OpenModsLib-1.7.10-0.7.3.jar
+7fc7368c8000-7fc7368df000 r--s 00264000 08:01 4588489                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/OpenBlocks-1.7.10-1.4.3.jar
+7fc7368df000-7fc7368e6000 r--s 00077000 08:01 4588486                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/NotEnoughItems-1.7.10-1.0.4.107-universal.jar
+7fc7368e6000-7fc7368ef000 r--s 00078000 08:01 4588436                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/1.7.10/MrTJPCore-1.7.10-1.0.6.13-universal.jar
+7fc7368ef000-7fc7368f9000 r--s 00080000 08:01 4588554                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/malisiscore-1.7.10-0.11.4.jar
+7fc7368f9000-7fc736925000 r--s 00228000 08:01 4588551                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/logisticspipes-0.8.3.119.jar
+7fc736925000-7fc736953000 r--s 0050e000 08:01 4588549                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/industrialcraft-2-2.2.737-experimental.jar
+7fc736953000-7fc736966000 r--s 000d4000 08:01 4588435                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/1.7.10/ForgeMultipart-1.7.10-1.2.0.345-universal.jar
+7fc736966000-7fc736969000 ---p 00000000 00:00 0 
+7fc736969000-7fc736a67000 rw-p 00000000 00:00 0                          [stack:6665]
+7fc736a67000-7fc736a6a000 ---p 00000000 00:00 0 
+7fc736a6a000-7fc736b68000 rw-p 00000000 00:00 0                          [stack:6681]
+7fc736b68000-7fc736bbb000 r-xp 00000000 08:01 1050889                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc736bbb000-7fc736dba000 ---p 00053000 08:01 1050889                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc736dba000-7fc736dbd000 r--p 00052000 08:01 1050889                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc736dbd000-7fc736dbe000 rw-p 00055000 08:01 1050889                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libfontmanager.so
+7fc736dbe000-7fc736dc1000 ---p 00000000 00:00 0 
+7fc736dc1000-7fc736ebf000 rw-p 00000000 00:00 0                          [stack:6633]
+7fc736ebf000-7fc736ec4000 r-xp 00000000 08:01 41688944                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc736ec4000-7fc7370c3000 ---p 00005000 08:01 41688944                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc7370c3000-7fc7370c4000 r--p 00004000 08:01 41688944                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc7370c4000-7fc7370c5000 rw-p 00005000 08:01 41688944                   /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc7370c5000-7fc7370ce000 r-xp 00000000 08:01 41688936                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc7370ce000-7fc7372cd000 ---p 00009000 08:01 41688936                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc7372cd000-7fc7372ce000 r--p 00008000 08:01 41688936                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc7372ce000-7fc7372cf000 rw-p 00009000 08:01 41688936                   /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc7372cf000-7fc7372d3000 r--s 00033000 08:01 4588472                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/InventoryTweaks-1.58-147.jar
+7fc7372d3000-7fc7372d5000 r--s 00005000 08:01 4588471                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/InfiniBows-1.7.10-universal-coremod-1.3.0.20.jar
+7fc7372d5000-7fc7372da000 r--s 00152000 08:01 4588544                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/gilded-games-util.jar
+7fc7372da000-7fc7372dd000 r--s 00017000 08:01 1050843                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar
+7fc7372dd000-7fc7372ec000 r--s 000f2000 08:01 4588449                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/CoFHCore-[1.7.10]3.0.2-262.jar
+7fc7372ec000-7fc737aed000 rw-p 00000000 00:00 0 
+7fc737aed000-7fc737afe000 r-xp 00000000 08:01 1050869                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc737afe000-7fc737cfd000 ---p 00011000 08:01 1050869                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc737cfd000-7fc737cfe000 r--p 00010000 08:01 1050869                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc737cfe000-7fc737cff000 rw-p 00011000 08:01 1050869                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnio.so
+7fc737cff000-7fc738000000 rw-p 00000000 00:00 0 
+7fc738000000-7fc7396d4000 rw-p 00000000 00:00 0 
+7fc7396d4000-7fc73c000000 ---p 00000000 00:00 0 
+7fc73c000000-7fc73c021000 rw-p 00000000 00:00 0 
+7fc73c021000-7fc740000000 ---p 00000000 00:00 0 
+7fc740000000-7fc740021000 rw-p 00000000 00:00 0 
+7fc740021000-7fc744000000 ---p 00000000 00:00 0 
+7fc744000000-7fc746523000 rw-p 00000000 00:00 0 
+7fc746523000-7fc748000000 ---p 00000000 00:00 0 
+7fc748000000-7fc748021000 rw-p 00000000 00:00 0 
+7fc748021000-7fc74c000000 ---p 00000000 00:00 0 
+7fc74c000000-7fc74c021000 rw-p 00000000 00:00 0 
+7fc74c021000-7fc750000000 ---p 00000000 00:00 0 
+7fc750000000-7fc7500e2000 rw-p 00000000 00:00 0 
+7fc7500e2000-7fc754000000 ---p 00000000 00:00 0 
+7fc754000000-7fc754002000 r--s 0001b000 08:01 4588538                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/fastcraft-1.21.jar
+7fc754002000-7fc754007000 r--s 00045000 08:01 4588434                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/1.7.10/CodeChickenLib-1.7.10-1.1.3.136-universal.jar
+7fc754007000-7fc75400a000 ---p 00000000 00:00 0 
+7fc75400a000-7fc754108000 rw-p 00000000 00:00 0                          [stack:6632]
+7fc754108000-7fc75410b000 r--s 00024000 08:01 4588450                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/CodeChickenCore-1.7.10-1.0.6.44-universal.jar
+7fc75410b000-7fc75410d000 r--s 0000e000 08:01 4588440                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/BetterFps-1.0.1.jar
+7fc75410d000-7fc754139000 r--s 0023d000 08:01 4588531                    /home/vinterdo/Downloads/MultiMC/instances/Crashality/minecraft/mods/appliedenergistics2-rv2-stable-9.jar
+7fc754139000-7fc754143000 r--s 000ae000 08:01 1050891                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar
+7fc754143000-7fc754148000 r--s 0004d000 08:01 1050842                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar
+7fc754148000-7fc75415f000 r-xp 00000000 08:01 1050881                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc75415f000-7fc75435e000 ---p 00017000 08:01 1050881                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc75435e000-7fc75435f000 r--p 00016000 08:01 1050881                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc75435f000-7fc754360000 rw-p 00017000 08:01 1050881                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libnet.so
+7fc754360000-7fc754368000 r-xp 00000000 08:01 1050873                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc754368000-7fc754567000 ---p 00008000 08:01 1050873                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc754567000-7fc754568000 r--p 00007000 08:01 1050873                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc754568000-7fc754569000 rw-p 00008000 08:01 1050873                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libmanagement.so
+7fc754569000-7fc75459b000 r--s 004d2000 08:01 42470218                   /home/vinterdo/Downloads/MultiMC/versions/1.7.10/1.7.10.jar
+7fc75459b000-7fc75459f000 r--s 00027000 08:01 4457732                    /home/vinterdo/Downloads/MultiMC/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.1/lwjgl_util-2.9.1.jar
+7fc75459f000-7fc7545ad000 r--s 000ea000 08:01 4457729                    /home/vinterdo/Downloads/MultiMC/libraries/org/lwjgl/lwjgl/lwjgl/2.9.1/lwjgl-2.9.1.jar
+7fc7545ad000-7fc7545b1000 r--s 0002f000 08:01 4457722                    /home/vinterdo/Downloads/MultiMC/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar
+7fc7545b1000-7fc7545b3000 r--s 0000b000 08:01 4457719                    /home/vinterdo/Downloads/MultiMC/libraries/tv/twitch/twitch/5.16/twitch-5.16.jar
+7fc7545b3000-7fc7545c1000 r--s 00099000 08:01 4457714                    /home/vinterdo/Downloads/MultiMC/libraries/org/apache/logging/log4j/log4j-core/2.0-beta9/log4j-core-2.0-beta9.jar
+7fc7545c1000-7fc7545c4000 r--s 00018000 08:01 4457711                    /home/vinterdo/Downloads/MultiMC/libraries/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9.jar
+7fc7545c4000-7fc7545c6000 r--s 0000e000 08:01 4457706                    /home/vinterdo/Downloads/MultiMC/libraries/com/mojang/authlib/1.5.21/authlib-1.5.21.jar
+7fc7545c6000-7fc7545cb000 r--s 0002a000 08:01 4457703                    /home/vinterdo/Downloads/MultiMC/libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+7fc7545cb000-7fc7545d2000 r--s 0003a000 08:01 4457698                    /home/vinterdo/Downloads/MultiMC/libraries/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+7fc7545d2000-7fc7545d6000 r--s 0002a000 08:01 4457694                    /home/vinterdo/Downloads/MultiMC/libraries/commons-io/commons-io/2.4/commons-io-2.4.jar
+7fc7545d6000-7fc754601000 r--s 001f9000 08:01 4588580                    /home/vinterdo/Downloads/MultiMC/libraries/com/google/guava/guava/17.0/guava-17.0.jar
+7fc754601000-7fc75461a000 r--s 0014a000 08:01 4457682                    /home/vinterdo/Downloads/MultiMC/libraries/io/netty/netty-all/4.0.10.Final/netty-all-4.0.10.Final.jar
+7fc75461a000-7fc754630000 r--s 0017a000 08:01 4457655                    /home/vinterdo/Downloads/MultiMC/libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar
+7fc754630000-7fc754658000 r--s 00241000 08:01 4457650                    /home/vinterdo/Downloads/MultiMC/libraries/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar
+7fc754658000-7fc7546a3000 r--s 003c6000 08:01 4588617                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/scala-reflect/2.11.1/scala-reflect-2.11.1.jar
+7fc7546a3000-7fc7546a6000 r-xp 00000000 08:01 1446065                    /lib/x86_64-linux-gnu/libkeyutils.so.1.5
+7fc7546a6000-7fc7548a5000 ---p 00003000 08:01 1446065                    /lib/x86_64-linux-gnu/libkeyutils.so.1.5
+7fc7548a5000-7fc7548a6000 r--p 00002000 08:01 1446065                    /lib/x86_64-linux-gnu/libkeyutils.so.1.5
+7fc7548a6000-7fc7548a7000 rw-p 00003000 08:01 1446065                    /lib/x86_64-linux-gnu/libkeyutils.so.1.5
+7fc7548a7000-7fc754913000 r-xp 00000000 08:01 1446131                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fc754913000-7fc754b12000 ---p 0006c000 08:01 1446131                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fc754b12000-7fc754b13000 r--p 0006b000 08:01 1446131                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fc754b13000-7fc754b14000 rw-p 0006c000 08:01 1446131                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7fc754b14000-7fc754b39000 r-xp 00000000 08:01 1446143                    /lib/x86_64-linux-gnu/libpng12.so.0.51.0
+7fc754b39000-7fc754d38000 ---p 00025000 08:01 1446143                    /lib/x86_64-linux-gnu/libpng12.so.0.51.0
+7fc754d38000-7fc754d39000 r--p 00024000 08:01 1446143                    /lib/x86_64-linux-gnu/libpng12.so.0.51.0
+7fc754d39000-7fc754d3a000 rw-p 00025000 08:01 1446143                    /lib/x86_64-linux-gnu/libpng12.so.0.51.0
+7fc754d3a000-7fc754d80000 r-xp 00000000 08:01 1446029                    /lib/x86_64-linux-gnu/libdbus-1.so.3.8.9
+7fc754d80000-7fc754f80000 ---p 00046000 08:01 1446029                    /lib/x86_64-linux-gnu/libdbus-1.so.3.8.9
+7fc754f80000-7fc754f81000 r--p 00046000 08:01 1446029                    /lib/x86_64-linux-gnu/libdbus-1.so.3.8.9
+7fc754f81000-7fc754f82000 rw-p 00047000 08:01 1446029                    /lib/x86_64-linux-gnu/libdbus-1.so.3.8.9
+7fc754f82000-7fc755000000 r-xp 00000000 08:01 41689325                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.2.0
+7fc755000000-7fc755200000 ---p 0007e000 08:01 41689325                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.2.0
+7fc755200000-7fc755201000 r--p 0007e000 08:01 41689325                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.2.0
+7fc755201000-7fc755202000 rw-p 0007f000 08:01 41689325                   /usr/lib/x86_64-linux-gnu/libgmp.so.10.2.0
+7fc755202000-7fc75522f000 r-xp 00000000 08:01 41689484                   /usr/lib/x86_64-linux-gnu/libhogweed.so.2.5
+7fc75522f000-7fc75542e000 ---p 0002d000 08:01 41689484                   /usr/lib/x86_64-linux-gnu/libhogweed.so.2.5
+7fc75542e000-7fc75542f000 r--p 0002c000 08:01 41689484                   /usr/lib/x86_64-linux-gnu/libhogweed.so.2.5
+7fc75542f000-7fc755430000 rw-p 0002d000 08:01 41689484                   /usr/lib/x86_64-linux-gnu/libhogweed.so.2.5
+7fc755430000-7fc755460000 r-xp 00000000 08:01 41689632                   /usr/lib/x86_64-linux-gnu/libnettle.so.4.7
+7fc755460000-7fc75565f000 ---p 00030000 08:01 41689632                   /usr/lib/x86_64-linux-gnu/libnettle.so.4.7
+7fc75565f000-7fc755660000 r--p 0002f000 08:01 41689632                   /usr/lib/x86_64-linux-gnu/libnettle.so.4.7
+7fc755660000-7fc755661000 rw-p 00030000 08:01 41689632                   /usr/lib/x86_64-linux-gnu/libnettle.so.4.7
+7fc755661000-7fc755672000 r-xp 00000000 08:01 41688277                   /usr/lib/x86_64-linux-gnu/libtasn1.so.6.3.2
+7fc755672000-7fc755872000 ---p 00011000 08:01 41688277                   /usr/lib/x86_64-linux-gnu/libtasn1.so.6.3.2
+7fc755872000-7fc755874000 r--p 00011000 08:01 41688277                   /usr/lib/x86_64-linux-gnu/libtasn1.so.6.3.2
+7fc755874000-7fc755875000 rw-p 00013000 08:01 41688277                   /usr/lib/x86_64-linux-gnu/libtasn1.so.6.3.2
+7fc755875000-7fc7558b1000 r-xp 00000000 08:01 41689679                   /usr/lib/x86_64-linux-gnu/libp11-kit.so.0.0.0
+7fc7558b1000-7fc755ab0000 ---p 0003c000 08:01 41689679                   /usr/lib/x86_64-linux-gnu/libp11-kit.so.0.0.0
+7fc755ab0000-7fc755ab9000 r--p 0003b000 08:01 41689679                   /usr/lib/x86_64-linux-gnu/libp11-kit.so.0.0.0
+7fc755ab9000-7fc755abb000 rw-p 00044000 08:01 41689679                   /usr/lib/x86_64-linux-gnu/libp11-kit.so.0.0.0
+7fc755abb000-7fc755ac5000 r-xp 00000000 08:01 41689547                   /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+7fc755ac5000-7fc755cc4000 ---p 0000a000 08:01 41689547                   /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+7fc755cc4000-7fc755cc5000 r--p 00009000 08:01 41689547                   /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+7fc755cc5000-7fc755cc6000 rw-p 0000a000 08:01 41689547                   /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+7fc755cc6000-7fc755cc9000 r-xp 00000000 08:01 1446024                    /lib/x86_64-linux-gnu/libcom_err.so.2.1
+7fc755cc9000-7fc755ec8000 ---p 00003000 08:01 1446024                    /lib/x86_64-linux-gnu/libcom_err.so.2.1
+7fc755ec8000-7fc755ec9000 r--p 00002000 08:01 1446024                    /lib/x86_64-linux-gnu/libcom_err.so.2.1
+7fc755ec9000-7fc755eca000 rw-p 00003000 08:01 1446024                    /lib/x86_64-linux-gnu/libcom_err.so.2.1
+7fc755eca000-7fc755ef8000 r-xp 00000000 08:01 41689541                   /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+7fc755ef8000-7fc7560f7000 ---p 0002e000 08:01 41689541                   /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+7fc7560f7000-7fc7560f9000 r--p 0002d000 08:01 41689541                   /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+7fc7560f9000-7fc7560fa000 rw-p 0002f000 08:01 41689541                   /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+7fc7560fa000-7fc7560fb000 rw-p 00000000 00:00 0 
+7fc7560fb000-7fc7561bb000 r-xp 00000000 08:01 41689545                   /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+7fc7561bb000-7fc7563bb000 ---p 000c0000 08:01 41689545                   /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+7fc7563bb000-7fc7563c8000 r--p 000c0000 08:01 41689545                   /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+7fc7563c8000-7fc7563ca000 rw-p 000cd000 08:01 41689545                   /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+7fc7563ca000-7fc7563cf000 r-xp 00000000 08:01 41688940                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc7563cf000-7fc7565ce000 ---p 00005000 08:01 41688940                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc7565ce000-7fc7565cf000 r--p 00004000 08:01 41688940                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc7565cf000-7fc7565d0000 rw-p 00005000 08:01 41688940                   /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc7565d0000-7fc7565d2000 r-xp 00000000 08:01 41688929                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc7565d2000-7fc7567d2000 ---p 00002000 08:01 41688929                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc7567d2000-7fc7567d3000 r--p 00002000 08:01 41688929                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc7567d3000-7fc7567d4000 rw-p 00003000 08:01 41688929                   /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc7567d4000-7fc7567db000 r-xp 00000000 08:01 41689226                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc7567db000-7fc7569da000 ---p 00007000 08:01 41689226                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc7569da000-7fc7569db000 r--p 00006000 08:01 41689226                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc7569db000-7fc7569dc000 rw-p 00007000 08:01 41689226                   /usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+7fc7569dc000-7fc7569f3000 r-xp 00000000 08:01 1446154                    /lib/x86_64-linux-gnu/libresolv-2.21.so
+7fc7569f3000-7fc756bf3000 ---p 00017000 08:01 1446154                    /lib/x86_64-linux-gnu/libresolv-2.21.so
+7fc756bf3000-7fc756bf5000 r--p 00017000 08:01 1446154                    /lib/x86_64-linux-gnu/libresolv-2.21.so
+7fc756bf5000-7fc756bf6000 rw-p 00019000 08:01 1446154                    /lib/x86_64-linux-gnu/libresolv-2.21.so
+7fc756bf6000-7fc756bf8000 rw-p 00000000 00:00 0 
+7fc756bf8000-7fc756c19000 r-xp 00000000 08:01 1446158                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fc756c19000-7fc756e18000 ---p 00021000 08:01 1446158                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fc756e18000-7fc756e19000 r--p 00020000 08:01 1446158                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fc756e19000-7fc756e1a000 rw-p 00021000 08:01 1446158                    /lib/x86_64-linux-gnu/libselinux.so.1
+7fc756e1a000-7fc756e1c000 rw-p 00000000 00:00 0 
+7fc756e1c000-7fc756f29000 r-xp 00000000 08:01 1446048                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4400.0
+7fc756f29000-7fc757128000 ---p 0010d000 08:01 1446048                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4400.0
+7fc757128000-7fc757129000 r--p 0010c000 08:01 1446048                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4400.0
+7fc757129000-7fc75712a000 rw-p 0010d000 08:01 1446048                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4400.0
+7fc75712a000-7fc75712b000 rw-p 00000000 00:00 0 
+7fc75712b000-7fc75712e000 r-xp 00000000 08:01 41689323                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4400.0
+7fc75712e000-7fc75732d000 ---p 00003000 08:01 41689323                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4400.0
+7fc75732d000-7fc75732e000 r--p 00002000 08:01 41689323                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4400.0
+7fc75732e000-7fc75732f000 rw-p 00003000 08:01 41689323                   /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4400.0
+7fc75732f000-7fc757355000 r-xp 00000000 08:01 1446039                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fc757355000-7fc757554000 ---p 00026000 08:01 1446039                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fc757554000-7fc757557000 r--p 00025000 08:01 1446039                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fc757557000-7fc757558000 rw-p 00028000 08:01 1446039                    /lib/x86_64-linux-gnu/libexpat.so.1.6.0
+7fc757558000-7fc7575fa000 r-xp 00000000 08:01 41689250                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7fc7575fa000-7fc7577f9000 ---p 000a2000 08:01 41689250                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7fc7577f9000-7fc7577ff000 r--p 000a1000 08:01 41689250                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7fc7577ff000-7fc757800000 rw-p 000a7000 08:01 41689250                   /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7fc757800000-7fc75c000000 rw-p 00000000 00:00 0 
+7fc75c000000-7fc75c032000 rw-p 00000000 00:00 0 
+7fc75c032000-7fc760000000 ---p 00000000 00:00 0 
+7fc760000000-7fc760001000 r--s 00001000 08:01 4457726                    /home/vinterdo/Downloads/MultiMC/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar
+7fc760001000-7fc760008000 r--s 0005e000 08:01 4588582                    /home/vinterdo/Downloads/MultiMC/libraries/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar
+7fc760008000-7fc760009000 r--s 0000f000 08:01 4457677                    /home/vinterdo/Downloads/MultiMC/libraries/com/paulscode/soundsystem/20120107/soundsystem-20120107.jar
+7fc760009000-7fc76000a000 r--s 00004000 08:01 4457674                    /home/vinterdo/Downloads/MultiMC/libraries/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar
+7fc76000a000-7fc76000c000 r--s 00004000 08:01 4457671                    /home/vinterdo/Downloads/MultiMC/libraries/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar
+7fc76000c000-7fc76000d000 r--s 00001000 08:01 4457668                    /home/vinterdo/Downloads/MultiMC/libraries/com/paulscode/codecwav/20101023/codecwav-20101023.jar
+7fc76000d000-7fc76000f000 r--s 00018000 08:01 4457665                    /home/vinterdo/Downloads/MultiMC/libraries/com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar
+7fc76000f000-7fc760011000 r--s 0000d000 08:01 4457661                    /home/vinterdo/Downloads/MultiMC/libraries/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.jar
+7fc760011000-7fc760013000 r--s 00045000 08:01 4457642                    /home/vinterdo/Downloads/MultiMC/libraries/java3d/vecmath/1.3.1/vecmath-1.3.1.jar
+7fc760013000-7fc760019000 r--s 0003f000 08:01 4204309                    /home/vinterdo/Downloads/MultiMC/libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar
+7fc760019000-7fc760024000 r--s 00085000 08:01 45353574                   /home/vinterdo/Downloads/MultiMC/libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar
+7fc760024000-7fc76002b000 r--s 00053000 08:01 44963146                   /home/vinterdo/Downloads/MultiMC/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar
+7fc76002b000-7fc760030000 r--s 00052000 08:01 44436133                   /home/vinterdo/Downloads/MultiMC/libraries/com/mojang/realms/1.3.5/realms-1.3.5.jar
+7fc760030000-7fc76003a000 r--s 00092000 08:01 4588616                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar
+7fc76003a000-7fc76012a000 r--s 00b95000 08:01 4588629                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.jar
+7fc76012a000-7fc76013a000 r-xp 00000000 08:01 41689030                   /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7fc76013a000-7fc760339000 ---p 00010000 08:01 41689030                   /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7fc760339000-7fc76033a000 r--p 0000f000 08:01 41689030                   /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7fc76033a000-7fc76033b000 rw-p 00010000 08:01 41689030                   /usr/lib/x86_64-linux-gnu/libavahi-client.so.3.2.9
+7fc76033b000-7fc760346000 r-xp 00000000 08:01 41689032                   /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7fc760346000-7fc760545000 ---p 0000b000 08:01 41689032                   /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7fc760545000-7fc760546000 r--p 0000a000 08:01 41689032                   /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7fc760546000-7fc760547000 rw-p 0000b000 08:01 41689032                   /usr/lib/x86_64-linux-gnu/libavahi-common.so.3.5.3
+7fc760547000-7fc760656000 r-xp 00000000 08:01 41689331                   /usr/lib/x86_64-linux-gnu/libgnutls-deb0.so.28.41.0
+7fc760656000-7fc760856000 ---p 0010f000 08:01 41689331                   /usr/lib/x86_64-linux-gnu/libgnutls-deb0.so.28.41.0
+7fc760856000-7fc76085f000 r--p 0010f000 08:01 41689331                   /usr/lib/x86_64-linux-gnu/libgnutls-deb0.so.28.41.0
+7fc76085f000-7fc760861000 rw-p 00118000 08:01 41689331                   /usr/lib/x86_64-linux-gnu/libgnutls-deb0.so.28.41.0
+7fc760861000-7fc7608a6000 r-xp 00000000 08:01 41689367                   /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+7fc7608a6000-7fc760aa5000 ---p 00045000 08:01 41689367                   /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+7fc760aa5000-7fc760aa7000 r--p 00044000 08:01 41689367                   /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+7fc760aa7000-7fc760aa8000 rw-p 00046000 08:01 41689367                   /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+7fc760aa8000-7fc760aa9000 rw-p 00000000 00:00 0 
+7fc760aa9000-7fc760ac6000 r-xp 00000000 08:01 42076298                   /home/vinterdo/Downloads/MultiMC/bin/libxcb.so.1
+7fc760ac6000-7fc760cc5000 ---p 0001d000 08:01 42076298                   /home/vinterdo/Downloads/MultiMC/bin/libxcb.so.1
+7fc760cc5000-7fc760cc6000 r--p 0001c000 08:01 42076298                   /home/vinterdo/Downloads/MultiMC/bin/libxcb.so.1
+7fc760cc6000-7fc760cc7000 rw-p 0001d000 08:01 42076298                   /home/vinterdo/Downloads/MultiMC/bin/libxcb.so.1
+7fc760cc7000-7fc760d17000 r-xp 00000000 08:01 41689339                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4400.0
+7fc760d17000-7fc760f17000 ---p 00050000 08:01 41689339                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4400.0
+7fc760f17000-7fc760f18000 r--p 00050000 08:01 41689339                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4400.0
+7fc760f18000-7fc760f19000 rw-p 00051000 08:01 41689339                   /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4400.0
+7fc760f19000-7fc761091000 r-xp 00000000 08:01 41689309                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4400.0
+7fc761091000-7fc761291000 ---p 00178000 08:01 41689309                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4400.0
+7fc761291000-7fc761295000 r--p 00178000 08:01 41689309                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4400.0
+7fc761295000-7fc761297000 rw-p 0017c000 08:01 41689309                   /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4400.0
+7fc761297000-7fc761299000 rw-p 00000000 00:00 0 
+7fc761299000-7fc7612d5000 r-xp 00000000 08:01 41689240                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.8.0
+7fc7612d5000-7fc7614d4000 ---p 0003c000 08:01 41689240                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.8.0
+7fc7614d4000-7fc7614d6000 r--p 0003b000 08:01 41689240                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.8.0
+7fc7614d6000-7fc7614d7000 rw-p 0003d000 08:01 41689240                   /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.8.0
+7fc7614d7000-7fc76154c000 r-xp 00000000 08:01 41689133                   /usr/lib/x86_64-linux-gnu/libcups.so.2
+7fc76154c000-7fc76174b000 ---p 00075000 08:01 41689133                   /usr/lib/x86_64-linux-gnu/libcups.so.2
+7fc76174b000-7fc761753000 r--p 00274000 08:01 41689133                   /usr/lib/x86_64-linux-gnu/libcups.so.2
+7fc761753000-7fc761754000 rw-p 0027c000 08:01 41689133                   /usr/lib/x86_64-linux-gnu/libcups.so.2
+7fc761754000-7fc761763000 r-xp 00000000 08:01 41688950                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc761763000-7fc761962000 ---p 0000f000 08:01 41688950                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc761962000-7fc761963000 r--p 0000e000 08:01 41688950                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc761963000-7fc761964000 rw-p 0000f000 08:01 41688950                   /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc761964000-7fc761969000 r-xp 00000000 08:01 41688970                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc761969000-7fc761b68000 ---p 00005000 08:01 41688970                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc761b68000-7fc761b69000 r--p 00004000 08:01 41688970                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc761b69000-7fc761b6a000 rw-p 00005000 08:01 41688970                   /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc761b6a000-7fc761b73000 r-xp 00000000 08:01 41688964                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc761b73000-7fc761d72000 ---p 00009000 08:01 41688964                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc761d72000-7fc761d73000 r--p 00008000 08:01 41688964                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc761d73000-7fc761d74000 rw-p 00009000 08:01 41688964                   /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc761d74000-7fc761ea7000 r-xp 00000000 08:01 41688925                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc761ea7000-7fc7620a7000 ---p 00133000 08:01 41688925                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc7620a7000-7fc7620a8000 r--p 00133000 08:01 41688925                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc7620a8000-7fc7620ac000 rw-p 00134000 08:01 41688925                   /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc7620ac000-7fc7620ad000 rw-p 00000000 00:00 0 
+7fc7620ad000-7fc7620be000 r-xp 00000000 08:01 41688942                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc7620be000-7fc7622bd000 ---p 00011000 08:01 41688942                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc7622bd000-7fc7622be000 r--p 00010000 08:01 41688942                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc7622be000-7fc7622bf000 rw-p 00011000 08:01 41688942                   /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc7622bf000-7fc762308000 r-xp 00000000 08:01 1050983                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fc762308000-7fc762507000 ---p 00049000 08:01 1050983                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fc762507000-7fc762508000 r--p 00048000 08:01 1050983                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fc762508000-7fc76250b000 rw-p 00049000 08:01 1050983                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/xawt/libmawt.so
+7fc76250b000-7fc76250c000 rw-p 00000000 00:00 0 
+7fc76250c000-7fc7625ad000 r-xp 00000000 08:01 1050861                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc7625ad000-7fc7627ac000 ---p 000a1000 08:01 1050861                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc7627ac000-7fc7627ad000 r--p 000a0000 08:01 1050861                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc7627ad000-7fc7627b8000 rw-p 000a1000 08:01 1050861                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libawt.so
+7fc7627b8000-7fc7627dd000 rw-p 00000000 00:00 0 
+7fc7627dd000-7fc7627de000 ---p 00000000 00:00 0 
+7fc7627de000-7fc7628de000 rw-p 00000000 00:00 0 
+7fc7628de000-7fc7628e1000 ---p 00000000 00:00 0 
+7fc7628e1000-7fc7629df000 rw-p 00000000 00:00 0                          [stack:6624]
+7fc7629df000-7fc7629e2000 ---p 00000000 00:00 0 
+7fc7629e2000-7fc762ae0000 rw-p 00000000 00:00 0                          [stack:6623]
+7fc762ae0000-7fc762ae3000 ---p 00000000 00:00 0 
+7fc762ae3000-7fc762be1000 rw-p 00000000 00:00 0                          [stack:6622]
+7fc762be1000-7fc762be4000 ---p 00000000 00:00 0 
+7fc762be4000-7fc762ce2000 rw-p 00000000 00:00 0                          [stack:6621]
+7fc762ce2000-7fc7634f5000 r--p 00000000 08:01 41688237                   /usr/lib/locale/locale-archive
+7fc7634f5000-7fc7634f8000 ---p 00000000 00:00 0 
+7fc7634f8000-7fc7635f6000 rw-p 00000000 00:00 0                          [stack:6620]
+7fc7635f6000-7fc7635f9000 ---p 00000000 00:00 0 
+7fc7635f9000-7fc7636f7000 rw-p 00000000 00:00 0                          [stack:6619]
+7fc7636f7000-7fc7636f8000 ---p 00000000 00:00 0 
+7fc7636f8000-7fc764000000 rw-p 00000000 00:00 0                          [stack:6618]
+7fc764000000-7fc764038000 rw-p 00000000 00:00 0 
+7fc764038000-7fc768000000 ---p 00000000 00:00 0 
+7fc768000000-7fc76802a000 rw-p 00000000 00:00 0 
+7fc76802a000-7fc76c000000 ---p 00000000 00:00 0 
+7fc76c000000-7fc76c036000 rw-p 00000000 00:00 0 
+7fc76c036000-7fc770000000 ---p 00000000 00:00 0 
+7fc770000000-7fc770002000 r--s 0000e000 08:01 3932511                    /home/vinterdo/Downloads/MultiMC/libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+7fc770002000-7fc770003000 r--s 00001000 08:01 4588578                    /home/vinterdo/Downloads/MultiMC/libraries/lzma/lzma/0.0.1/lzma-0.0.1.jar
+7fc770003000-7fc77000e000 r--s 000a3000 08:01 4588614                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/scala-swing_2.11/1.0.1/scala-swing_2.11-1.0.1.jar
+7fc77000e000-7fc770019000 r--s 0005a000 08:01 4588613                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/scala-parser-combinators_2.11/1.0.1/scala-parser-combinators_2.11-1.0.1.jar
+7fc770019000-7fc770072000 r--s 004d1000 08:01 4588618                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/scala-library/2.11.1/scala-library-2.11.1.jar
+7fc770072000-7fc770077000 r--s 0002d000 08:01 4588612                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/plugins/scala-continuations-plugin_2.11.1/1.0.2/scala-continuations-plugin_2.11.1-1.0.2.jar
+7fc770077000-7fc770079000 r--s 00005000 08:01 4588609                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/plugins/scala-continuations-library_2.11/1.0.2/scala-continuations-library_2.11-1.0.2.jar
+7fc770079000-7fc77007b000 r--s 0000c000 08:01 4588610                    /home/vinterdo/Downloads/MultiMC/libraries/org/scala-lang/scala-actors-migration_2.11/1.1.0/scala-actors-migration_2.11-1.1.0.jar
+7fc77007b000-7fc770080000 r--s 00030000 08:01 4588611                    /home/vinterdo/Downloads/MultiMC/libraries/com/typesafe/config/1.2.1/config-1.2.1.jar
+7fc770080000-7fc7707d0000 rw-p 00000000 00:00 0 
+7fc7707d0000-7fc770981000 r--s 01d27000 08:01 1050824                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+7fc770981000-7fc770eff000 rw-p 00000000 00:00 0 
+7fc770eff000-7fc770f00000 ---p 00000000 00:00 0 
+7fc770f00000-7fc771000000 rw-p 00000000 00:00 0                          [stack:6617]
+7fc771000000-7fc771ba0000 rwxp 00000000 00:00 0 
+7fc771ba0000-7fc778000000 rw-p 00000000 00:00 0 
+7fc778000000-7fc778025000 r--s 00236000 08:01 4588615                    /home/vinterdo/Downloads/MultiMC/libraries/com/typesafe/akka/akka-actor_2.11/2.3.3/akka-actor_2.11-2.3.3.jar
+7fc778025000-7fc77802a000 r--s 00036000 08:01 4588574                    /home/vinterdo/Downloads/MultiMC/libraries/org/ow2/asm/asm-all/5.0.3/asm-all-5.0.3.jar
+7fc77802a000-7fc77802c000 r--s 00007000 08:01 4588569                    /home/vinterdo/Downloads/MultiMC/libraries/net/minecraft/launchwrapper/1.11/launchwrapper-1.11.jar
+7fc77802c000-7fc77802d000 ---p 00000000 00:00 0 
+7fc77802d000-7fc77812d000 rw-p 00000000 00:00 0                          [stack:6616]
+7fc77812d000-7fc77812e000 ---p 00000000 00:00 0 
+7fc77812e000-7fc77822e000 rw-p 00000000 00:00 0                          [stack:6615]
+7fc77822e000-7fc77822f000 ---p 00000000 00:00 0 
+7fc77822f000-7fc7785a0000 rw-p 00000000 00:00 0                          [stack:6614]
+7fc7785a0000-7fc77865a000 rw-p 00000000 00:00 0 
+7fc77865a000-7fc7788cb000 rw-p 00000000 00:00 0 
+7fc7788cb000-7fc778984000 rw-p 00000000 00:00 0 
+7fc778984000-7fc778ada000 rw-p 00000000 00:00 0 
+7fc778ada000-7fc778adb000 rw-p 00000000 00:00 0 
+7fc778adb000-7fc778ae3000 r-xp 00000000 08:01 1050868                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc778ae3000-7fc778ce2000 ---p 00008000 08:01 1050868                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc778ce2000-7fc778ce3000 r--p 00007000 08:01 1050868                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc778ce3000-7fc778ce4000 rw-p 00008000 08:01 1050868                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libzip.so
+7fc778ce4000-7fc778cf0000 r-xp 00000000 08:01 1446100                    /lib/x86_64-linux-gnu/libnss_files-2.21.so
+7fc778cf0000-7fc778eef000 ---p 0000c000 08:01 1446100                    /lib/x86_64-linux-gnu/libnss_files-2.21.so
+7fc778eef000-7fc778ef0000 r--p 0000b000 08:01 1446100                    /lib/x86_64-linux-gnu/libnss_files-2.21.so
+7fc778ef0000-7fc778ef1000 rw-p 0000c000 08:01 1446100                    /lib/x86_64-linux-gnu/libnss_files-2.21.so
+7fc778ef1000-7fc778efc000 r-xp 00000000 08:01 1446111                    /lib/x86_64-linux-gnu/libnss_nis-2.21.so
+7fc778efc000-7fc7790fb000 ---p 0000b000 08:01 1446111                    /lib/x86_64-linux-gnu/libnss_nis-2.21.so
+7fc7790fb000-7fc7790fc000 r--p 0000a000 08:01 1446111                    /lib/x86_64-linux-gnu/libnss_nis-2.21.so
+7fc7790fc000-7fc7790fd000 rw-p 0000b000 08:01 1446111                    /lib/x86_64-linux-gnu/libnss_nis-2.21.so
+7fc7790fd000-7fc779114000 r-xp 00000000 08:01 1446094                    /lib/x86_64-linux-gnu/libnsl-2.21.so
+7fc779114000-7fc779313000 ---p 00017000 08:01 1446094                    /lib/x86_64-linux-gnu/libnsl-2.21.so
+7fc779313000-7fc779314000 r--p 00016000 08:01 1446094                    /lib/x86_64-linux-gnu/libnsl-2.21.so
+7fc779314000-7fc779315000 rw-p 00017000 08:01 1446094                    /lib/x86_64-linux-gnu/libnsl-2.21.so
+7fc779315000-7fc779317000 rw-p 00000000 00:00 0 
+7fc779317000-7fc77931f000 r-xp 00000000 08:01 1446096                    /lib/x86_64-linux-gnu/libnss_compat-2.21.so
+7fc77931f000-7fc77951e000 ---p 00008000 08:01 1446096                    /lib/x86_64-linux-gnu/libnss_compat-2.21.so
+7fc77951e000-7fc77951f000 r--p 00007000 08:01 1446096                    /lib/x86_64-linux-gnu/libnss_compat-2.21.so
+7fc77951f000-7fc779520000 rw-p 00008000 08:01 1446096                    /lib/x86_64-linux-gnu/libnss_compat-2.21.so
+7fc779520000-7fc77954d000 r-xp 00000000 08:01 1050879                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc77954d000-7fc77974c000 ---p 0002d000 08:01 1050879                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc77974c000-7fc77974d000 r--p 0002c000 08:01 1050879                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc77974d000-7fc77974f000 rw-p 0002d000 08:01 1050879                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libjava.so
+7fc77974f000-7fc77975e000 r-xp 00000000 08:01 1050871                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc77975e000-7fc77995d000 ---p 0000f000 08:01 1050871                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc77995d000-7fc779960000 r--p 0000e000 08:01 1050871                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc779960000-7fc779961000 rw-p 00011000 08:01 1050871                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/libverify.so
+7fc779961000-7fc779968000 r-xp 00000000 08:01 1446156                    /lib/x86_64-linux-gnu/librt-2.21.so
+7fc779968000-7fc779b67000 ---p 00007000 08:01 1446156                    /lib/x86_64-linux-gnu/librt-2.21.so
+7fc779b67000-7fc779b68000 r--p 00006000 08:01 1446156                    /lib/x86_64-linux-gnu/librt-2.21.so
+7fc779b68000-7fc779b69000 rw-p 00007000 08:01 1446156                    /lib/x86_64-linux-gnu/librt-2.21.so
+7fc779b69000-7fc779b7f000 r-xp 00000000 08:01 1446044                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc779b7f000-7fc779d7e000 ---p 00016000 08:01 1446044                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc779d7e000-7fc779d7f000 rw-p 00015000 08:01 1446044                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fc779d7f000-7fc779e86000 r-xp 00000000 08:01 1446073                    /lib/x86_64-linux-gnu/libm-2.21.so
+7fc779e86000-7fc77a085000 ---p 00107000 08:01 1446073                    /lib/x86_64-linux-gnu/libm-2.21.so
+7fc77a085000-7fc77a086000 r--p 00106000 08:01 1446073                    /lib/x86_64-linux-gnu/libm-2.21.so
+7fc77a086000-7fc77a087000 rw-p 00107000 08:01 1446073                    /lib/x86_64-linux-gnu/libm-2.21.so
+7fc77a087000-7fc77a174000 r-xp 00000000 08:01 42076301                   /home/vinterdo/Downloads/MultiMC/bin/libstdc++.so.6
+7fc77a174000-7fc77a373000 ---p 000ed000 08:01 42076301                   /home/vinterdo/Downloads/MultiMC/bin/libstdc++.so.6
+7fc77a373000-7fc77a37c000 r--p 000ec000 08:01 42076301                   /home/vinterdo/Downloads/MultiMC/bin/libstdc++.so.6
+7fc77a37c000-7fc77a37e000 rw-p 000f5000 08:01 42076301                   /home/vinterdo/Downloads/MultiMC/bin/libstdc++.so.6
+7fc77a37e000-7fc77a393000 rw-p 00000000 00:00 0 
+7fc77a393000-7fc77aeea000 r-xp 00000000 08:01 1050856                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc77aeea000-7fc77b0e9000 ---p 00b57000 08:01 1050856                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc77b0e9000-7fc77b188000 r--p 00b56000 08:01 1050856                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc77b188000-7fc77b1ab000 rw-p 00bf5000 08:01 1050856                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+7fc77b1ab000-7fc77b1d8000 rw-p 00000000 00:00 0 
+7fc77b1d8000-7fc77b1f1000 r-xp 00000000 08:01 1446188                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc77b1f1000-7fc77b3f1000 ---p 00019000 08:01 1446188                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc77b3f1000-7fc77b3f2000 r--p 00019000 08:01 1446188                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc77b3f2000-7fc77b3f3000 rw-p 0001a000 08:01 1446188                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc77b3f3000-7fc77b40b000 r-xp 00000000 08:01 1446148                    /lib/x86_64-linux-gnu/libpthread-2.21.so
+7fc77b40b000-7fc77b60b000 ---p 00018000 08:01 1446148                    /lib/x86_64-linux-gnu/libpthread-2.21.so
+7fc77b60b000-7fc77b60c000 r--p 00018000 08:01 1446148                    /lib/x86_64-linux-gnu/libpthread-2.21.so
+7fc77b60c000-7fc77b60d000 rw-p 00019000 08:01 1446148                    /lib/x86_64-linux-gnu/libpthread-2.21.so
+7fc77b60d000-7fc77b611000 rw-p 00000000 00:00 0 
+7fc77b611000-7fc77b614000 r-xp 00000000 08:01 1446032                    /lib/x86_64-linux-gnu/libdl-2.21.so
+7fc77b614000-7fc77b813000 ---p 00003000 08:01 1446032                    /lib/x86_64-linux-gnu/libdl-2.21.so
+7fc77b813000-7fc77b814000 r--p 00002000 08:01 1446032                    /lib/x86_64-linux-gnu/libdl-2.21.so
+7fc77b814000-7fc77b815000 rw-p 00003000 08:01 1446032                    /lib/x86_64-linux-gnu/libdl-2.21.so
+7fc77b815000-7fc77b9d5000 r-xp 00000000 08:01 1446017                    /lib/x86_64-linux-gnu/libc-2.21.so
+7fc77b9d5000-7fc77bbd5000 ---p 001c0000 08:01 1446017                    /lib/x86_64-linux-gnu/libc-2.21.so
+7fc77bbd5000-7fc77bbd9000 r--p 001c0000 08:01 1446017                    /lib/x86_64-linux-gnu/libc-2.21.so
+7fc77bbd9000-7fc77bbdb000 rw-p 001c4000 08:01 1446017                    /lib/x86_64-linux-gnu/libc-2.21.so
+7fc77bbdb000-7fc77bbdf000 rw-p 00000000 00:00 0 
+7fc77bbdf000-7fc77bbec000 r-xp 00000000 08:01 1050876                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc77bbec000-7fc77bdeb000 ---p 0000d000 08:01 1050876                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc77bdeb000-7fc77bdec000 r--p 0000c000 08:01 1050876                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc77bdec000-7fc77bded000 rw-p 0000d000 08:01 1050876                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/jli/libjli.so
+7fc77bded000-7fc77be11000 r-xp 00000000 08:01 1445989                    /lib/x86_64-linux-gnu/ld-2.21.so
+7fc77be11000-7fc77be29000 r--s 002b6000 08:01 4588565                    /home/vinterdo/Downloads/MultiMC/libraries/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forge-1.7.10-10.13.4.1448-1.7.10-universal.jar
+7fc77be29000-7fc77be2b000 r--s 00006000 08:01 42076316                   /home/vinterdo/Downloads/MultiMC/bin/jars/NewLaunch.jar
+7fc77be2b000-7fc77be5a000 rw-p 00000000 00:00 0 
+7fc77be5a000-7fc77beeb000 rw-p 00000000 00:00 0 
+7fc77beeb000-7fc77beee000 ---p 00000000 00:00 0 
+7fc77beee000-7fc77bff1000 rw-p 00000000 00:00 0                          [stack:6612]
+7fc77bff1000-7fc77bff5000 r--s 00034000 08:01 1050895                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+7fc77bff5000-7fc77bff8000 r--s 0000f000 08:01 1050893                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+7fc77bff8000-7fc77bffb000 r--s 00086000 08:01 1050898                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/localedata.jar
+7fc77bffb000-7fc77bffd000 r--s 00012000 08:01 1050894                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/zipfs.jar
+7fc77bffd000-7fc77c001000 r--s 0003c000 08:01 1050896                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+7fc77c001000-7fc77c003000 r--s 00006000 08:01 42078265                   /usr/share/java/java-atk-wrapper.jar
+7fc77c003000-7fc77c004000 r--s 00002000 08:01 1050897                    /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/dnsns.jar
+7fc77c004000-7fc77c00c000 rw-s 00000000 08:01 9699905                    /tmp/hsperfdata_vinterdo/6608 (deleted)
+7fc77c00c000-7fc77c00d000 rw-p 00000000 00:00 0 
+7fc77c00d000-7fc77c00e000 ---p 00000000 00:00 0 
+7fc77c00e000-7fc77c010000 rw-p 00000000 00:00 0 
+7fc77c010000-7fc77c011000 r--p 00023000 08:01 1445989                    /lib/x86_64-linux-gnu/ld-2.21.so
+7fc77c011000-7fc77c012000 rw-p 00024000 08:01 1445989                    /lib/x86_64-linux-gnu/ld-2.21.so
+7fc77c012000-7fc77c013000 rw-p 00000000 00:00 0 
+7fffe3ab3000-7fffe3ad4000 rw-p 00000000 00:00 0                          [stack]
+7fffe3bea000-7fffe3bec000 r--p 00000000 00:00 0                          [vvar]
+7fffe3bec000-7fffe3bee000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xms512m -Xmx2048m -XX:PermSize=256m -Duser.language=en 
+java_command: /home/vinterdo/Downloads/MultiMC/bin/jars/NewLaunch.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+USERNAME=vinterdo
+LD_LIBRARY_PATH=/home/vinterdo/Downloads/MultiMC/bin:
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x98abe0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x98abe0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x7f8a60], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGXFSZ: [libjvm.so+0x7f8a60], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x7f8a60], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x7f88e0], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x7f8ae0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x7f8ae0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x7f8ae0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x7f8ae0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTRAP: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Ubuntu 15.04 (vivid)
+uname:Linux 3.19.0-18-generic #18-Ubuntu SMP Tue May 19 18:31:35 UTC 2015 x86_64
+libc:glibc 2.21 NPTL 2.21 
+rlimit: STACK 8192k, CORE 0k, NPROC 15300, NOFILE 65536, AS infinity
+load average:8,87 6,73 4,42
+
+/proc/meminfo:
+MemTotal:        3939336 kB
+MemFree:         1199880 kB
+MemAvailable:    1268796 kB
+Buffers:           12216 kB
+Cached:           410336 kB
+SwapCached:        73972 kB
+Active:          1912032 kB
+Inactive:         688928 kB
+Active(anon):    1803996 kB
+Inactive(anon):   577192 kB
+Active(file):     108036 kB
+Inactive(file):   111736 kB
+Unevictable:          16 kB
+Mlocked:              16 kB
+SwapTotal:       4085756 kB
+SwapFree:        2986724 kB
+Dirty:              4352 kB
+Writeback:             0 kB
+AnonPages:       2155156 kB
+Mapped:           192488 kB
+Shmem:            202656 kB
+Slab:              68500 kB
+SReclaimable:      36144 kB
+SUnreclaim:        32356 kB
+KernelStack:        6912 kB
+PageTables:        28456 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6055424 kB
+Committed_AS:    5498440 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      544692 kB
+VmallocChunk:   34359187452 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:   1021952 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      102144 kB
+DirectMap2M:     3985408 kB
+
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i3-2348M CPU @ 2.30GHz
+stepping	: 7
+microcode	: 0x28
+cpu MHz		: 1712.871
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+bugs		:
+bogomips	: 4589.76
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i3-2348M CPU @ 2.30GHz
+stepping	: 7
+microcode	: 0x28
+cpu MHz		: 824.226
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+bugs		:
+bogomips	: 4589.76
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i3-2348M CPU @ 2.30GHz
+stepping	: 7
+microcode	: 0x28
+cpu MHz		: 899.695
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+bugs		:
+bogomips	: 4589.76
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i3-2348M CPU @ 2.30GHz
+stepping	: 7
+microcode	: 0x28
+cpu MHz		: 814.433
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+bugs		:
+bogomips	: 4589.76
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 3939336k(1199880k free), swap 4085756k(2986724k free)
+
+vm_info: OpenJDK 64-Bit Server VM (24.79-b02) for linux-amd64 JRE (1.7.0_79-b14), built on Apr 15 2015 21:06:31 by "buildd" with gcc 4.9.2
+
+time: Mon Jun 29 00:25:10 2015
+elapsed time: 1017 seconds
+
