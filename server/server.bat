@@ -1,0 +1,2 @@
+java -Xms512M -Xmx2048M -XX:MaxPermSize=256m -XX:+UseParallelGC -XX:ParallelGCThreads=2 -XX:+UseNUMA -jar forge-1.7.10-10.13.4.1448-1.7.10-universal.jar nogui
+pause
